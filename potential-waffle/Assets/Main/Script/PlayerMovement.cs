@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] GameObject _laserBlueprint; 
     [SerializeField] float _thrusterForce = 1;
     [SerializeField] ParticleSystem _particles;
+    [SerializeField] Transform _leftLaserSpawn;
+    [SerializeField] Transform _rightLaserSpawn;
 
     Rigidbody2D _rigidBody;
     Vector2 _velocity = Vector2.zero;
@@ -15,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
         _rigidBody = GetComponent<Rigidbody2D>();
     }
 
+    void Update()
+    {
+        ShootLaser();
+    }
 
     void FixedUpdate()
     {
@@ -22,6 +29,14 @@ public class PlayerMovement : MonoBehaviour
         MovePlayer();
     }
 
+    void ShootLaser()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(_laserBlueprint, _leftLaserSpawn.position, _leftLaserSpawn.rotation);
+            Instantiate(_laserBlueprint, _rightLaserSpawn.position, _rightLaserSpawn.rotation);
+        }
+    }
 
     void MovePlayer()
     {
