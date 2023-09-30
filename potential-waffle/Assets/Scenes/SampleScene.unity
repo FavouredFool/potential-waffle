@@ -1055,6 +1055,8 @@ GameObject:
   - component: {fileID: 564386178}
   - component: {fileID: 564386177}
   - component: {fileID: 564386181}
+  - component: {fileID: 564386183}
+  - component: {fileID: 564386182}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -1197,6 +1199,92 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 2
   _rotateSpeed: 10
+--- !u!114 &564386182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564386176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f16f4221af57c4097ddd6cef24d0b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Radius: 1.5
+  NumEdges: 32
+--- !u!68 &564386183
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564386176}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.5, y: 0}
+  - {x: 1.4711778, y: 0.2926355}
+  - {x: 1.3858192, y: 0.57402515}
+  - {x: 1.2472044, y: 0.83335537}
+  - {x: 1.0606601, y: 1.0606601}
+  - {x: 0.8333553, y: 1.2472045}
+  - {x: 0.57402515, y: 1.3858192}
+  - {x: 0.29263535, y: 1.4711779}
+  - {x: -0.00000006556708, y: 1.5}
+  - {x: -0.2926355, y: 1.4711778}
+  - {x: -0.5740253, y: 1.3858192}
+  - {x: -0.83335555, y: 1.2472043}
+  - {x: -1.0606601, y: 1.0606601}
+  - {x: -1.2472045, y: 0.8333553}
+  - {x: -1.3858194, y: 0.5740249}
+  - {x: -1.4711779, y: 0.29263547}
+  - {x: -1.5, y: -0.00000013113416}
+  - {x: -1.4711778, y: -0.29263574}
+  - {x: -1.3858192, y: -0.57402515}
+  - {x: -1.2472043, y: -0.8333554}
+  - {x: -1.06066, y: -1.0606604}
+  - {x: -0.833355, y: -1.2472047}
+  - {x: -0.5740247, y: -1.3858196}
+  - {x: -0.29263556, y: -1.4711778}
+  - {x: 0.00000001788732, y: -1.5}
+  - {x: 0.29263562, y: -1.4711778}
+  - {x: 0.5740254, y: -1.3858192}
+  - {x: 0.83335567, y: -1.2472042}
+  - {x: 1.0606605, y: -1.0606598}
+  - {x: 1.2472044, y: -0.8333554}
+  - {x: 1.3858193, y: -0.57402515}
+  - {x: 1.4711779, y: -0.29263535}
+  - {x: 1.5, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &612686898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2548cb3b93368164b87d87873edbeacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _thrusterForce: 1
 --- !u!61 &735706691
 BoxCollider2D:
   m_ObjectHideFlags: 0
