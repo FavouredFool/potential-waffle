@@ -14,7 +14,6 @@ public class ShipMovement : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.RotateAround(Vector3.zero, Vector3.forward, Time.deltaTime * _moveSpeed);
