@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1394738916942414347}
   - component: {fileID: 2234208588102648858}
   m_Layer: 9
-  m_Name: Planet V1
+  m_Name: Planet V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3554678336957758587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.023, y: 3.517, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.3, y: 2.3, z: 2.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8810563489966053748}
@@ -51,7 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366733a9d814f2742b9eb341bc3cf004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 8
+  _maxHealth: 64
+  _minMetal: 16
+  _maxMetal: 24
   _planetBitBlueprint: {fileID: 2560678486844360142, guid: 9af0e30a7de14564982e4c01ab00600e, type: 3}
   _metalBlueprint: {fileID: 5755942492486178987, guid: 881f00f530c63a741bcec5d253b4e6e6, type: 3}
   _healthbarDisc: {fileID: 9144759076359028652}
@@ -246,9 +248,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 45
-  m_LinearDrag: 0.5
-  m_AngularDrag: 0.2
+  m_Mass: 70
+  m_LinearDrag: 10
+  m_AngularDrag: 0.4
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:

@@ -6,6 +6,8 @@ using UnityEngine;
 public class Planet : MonoBehaviour
 {
     [SerializeField] int _maxHealth;
+    [SerializeField] int _minMetal;
+    [SerializeField] int _maxMetal;
     [SerializeField] GameObject _planetBitBlueprint;
     [SerializeField] GameObject _metalBlueprint;
     [SerializeField] Disc _healthbarDisc;
@@ -29,7 +31,7 @@ public class Planet : MonoBehaviour
                 Instantiate(_planetBitBlueprint, transform.position, transform.rotation);
             }
 
-            for (int i = 0; i < Random.Range(1, 2); i++) 
+            for (int i = 0; i < Random.Range(_minMetal, _maxMetal+1); i++) 
             {
                 Instantiate(_metalBlueprint, transform.position, transform.rotation);
             }

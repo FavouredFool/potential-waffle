@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] ResourceManager _resourceManager;
     [SerializeField] GameObject _laserBlueprint; 
     [SerializeField] float _thrusterForce = 1;
     [SerializeField] ParticleSystem _particles;
@@ -58,5 +59,19 @@ public class PlayerMovement : MonoBehaviour
 
         // rotate around ANGLE!
         //_rigidBody.SetRotation(Quaternion.Angle(rotation, transform.rotation));
+    }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        Debug.Log("triggered");
+        ResourceCollectable resource = collider.gameObject.GetComponent<ResourceCollectable>();
+    
+        if (resource != null) 
+        {
+            Destroy(resource.gameObject);
+
+            _resourceManager.AddResource(resource.GetResourceType());
+        }
+
     }
 }
