@@ -7025,6 +7025,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet V1
       objectReference: {fileID: 0}
+    - target: {fileID: 4400970500941421678, guid: 74d1622422bffb44ba370176c6215607, type: 3}
+      propertyPath: _healthbarGradient.ctime1
+      value: 39321
+      objectReference: {fileID: 0}
+    - target: {fileID: 4400970500941421678, guid: 74d1622422bffb44ba370176c6215607, type: 3}
+      propertyPath: _healthbarGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4400970500941421678, guid: 74d1622422bffb44ba370176c6215607, type: 3}
+      propertyPath: _healthbarGradient.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4400970500941421678, guid: 74d1622422bffb44ba370176c6215607, type: 3}
+      propertyPath: _healthbarGradient.key0.r
+      value: 0.509434
+      objectReference: {fileID: 0}
     - target: {fileID: 9087581118337046692, guid: 74d1622422bffb44ba370176c6215607, type: 3}
       propertyPath: m_RootOrder
       value: -1
