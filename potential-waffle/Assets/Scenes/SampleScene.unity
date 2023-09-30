@@ -1245,6 +1245,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 597482573274944673, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
   m_PrefabInstance: {fileID: 1232148643184843384}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1865717026 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9064546256221383509, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
+  m_PrefabInstance: {fileID: 1232148643184843384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1997711810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1468,9 +1473,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 564386180}
     - target: {fileID: 2638460192783646874, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1865717026}
+    - target: {fileID: 2638460192783646874, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
       propertyPath: _planet
       value: 
       objectReference: {fileID: 293120215}
+    - target: {fileID: 9064546256221383509, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
+      propertyPath: orthographic size
+      value: 2.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
