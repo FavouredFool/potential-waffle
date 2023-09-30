@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 8810563489966053748}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4400970500941421678
 MonoBehaviour:
@@ -50,7 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366733a9d814f2742b9eb341bc3cf004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxHealth: 5
+  _maxHealth: 8
+  _planetBitBlueprint: {fileID: 2560678486844360142, guid: 9af0e30a7de14564982e4c01ab00600e, type: 3}
   _healthbarDisc: {fileID: 9144759076359028652}
   _healthbarGradient:
     serializedVersion: 2
@@ -244,8 +245,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 45
-  m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_LinearDrag: 0.5
+  m_AngularDrag: 0.2
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Planet : MonoBehaviour
 {
     [SerializeField] int _maxHealth;
+    [SerializeField] GameObject _planetBitBlueprint;
     [SerializeField] Disc _healthbarDisc;
     [SerializeField] Gradient _healthbarGradient;
 
@@ -21,7 +22,14 @@ public class Planet : MonoBehaviour
         if (_currentHealth <= 0)
         {
             // Kill, spawn planetbits and resources
+            
+            for (int i = 0; i < Random.Range(2, 5); i++) 
+            {
+                Instantiate(_planetBitBlueprint, transform.position, transform.rotation);
+            }
+
             Destroy(this.gameObject);
+
             return;
         }
         

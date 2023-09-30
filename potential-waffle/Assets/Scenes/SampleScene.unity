@@ -6975,10 +6975,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet V1
       objectReference: {fileID: 0}
-    - target: {fileID: 4400970500941421678, guid: 74d1622422bffb44ba370176c6215607, type: 3}
-      propertyPath: _maxHealth
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 9087581118337046692, guid: 74d1622422bffb44ba370176c6215607, type: 3}
       propertyPath: m_RootOrder
       value: -1
