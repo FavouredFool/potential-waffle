@@ -51,7 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendMode: 1
   scaleMode: 0
-  color: {r: 0.7322891, g: 0.754717, b: 0.72979707, a: 1}
+  color: {r: 0.9245283, g: 0.79754674, b: 0.72828406, a: 1}
   detailLevel: 2
   renderQueue: -1
   zTest: 4
@@ -225,3 +225,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3da1927ac59b646a851e8ef4f24083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _timeTillKill: 15
