@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 8810563489966053748}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4400970500941421678
 MonoBehaviour:
@@ -58,16 +58,16 @@ MonoBehaviour:
     serializedVersion: 2
     key0: {r: 1, g: 0.1084907, b: 0.10849059, a: 1}
     key1: {r: 1, g: 0.5460526, b: 0, a: 1}
-    key2: {r: 0.65882355, g: 1, b: 0.627451, a: 0}
-    key3: {r: 0.65882355, g: 1, b: 0.627451, a: 0}
+    key2: {r: 1, g: 0.80044395, b: 0.5613208, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 18504
-    ctime2: 35273
-    ctime3: 65535
+    ctime1: 30647
+    ctime2: 65535
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_ColorSpace: -1
-    m_NumColorKeys: 4
+    m_NumColorKeys: 3
     m_NumAlphaKeys: 2
 --- !u!114 &2874347436835099280
 MonoBehaviour:
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendMode: 1
   scaleMode: 0
-  color: {r: 0.66046506, g: 1, b: 0.6273585, a: 1}
+  color: {r: 1, g: 0.6987429, b: 0.5330188, a: 1}
   detailLevel: 2
   renderQueue: -1
   zTest: 4
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendMode: 1
   scaleMode: 0
-  color: {r: 0.65882355, g: 1, b: 0.627451, a: 0.101960786}
+  color: {r: 1, g: 0.69803923, b: 0.53333336, a: 0.101960786}
   detailLevel: 2
   renderQueue: -1
   zTest: 4
