@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float _thrusterForce = 1;
+    [SerializeField] ParticleSystem _particles;
 
     Rigidbody2D _rigidBody;
     Vector2 _velocity = Vector2.zero;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             _rigidBody.AddForce(transform.up * _thrusterForce);
+            _particles.Play();
         }
     }
 
