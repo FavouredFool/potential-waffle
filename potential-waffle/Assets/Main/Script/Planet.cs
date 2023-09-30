@@ -18,11 +18,6 @@ public class Planet : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1))
-        {
-            _currentHealth--;
-        }
-
         if (_currentHealth <= 0)
         {
             // Kill, spawn planetbits and resources
@@ -38,5 +33,8 @@ public class Planet : MonoBehaviour
         _healthbarDisc.Color = healthbarColor;
     }
 
-
+    public void ReduceHP(int damageAmount)
+    {
+        _currentHealth -= damageAmount;
+    }
 }
