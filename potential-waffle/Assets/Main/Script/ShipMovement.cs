@@ -22,5 +22,7 @@ public class ShipMovement : MonoBehaviour
 
         Quaternion q = Quaternion.AngleAxis(_moveSpeed * Time.deltaTime, transform.forward);
         _rigidbody.MovePosition(q * _rigidbody.transform.position);
+
+        _rigidbody.MoveRotation((_rotateSpeed * Time.time)%360);
     }
 }
