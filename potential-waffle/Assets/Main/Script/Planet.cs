@@ -7,6 +7,7 @@ public class Planet : MonoBehaviour
 {
     [SerializeField] int _maxHealth;
     [SerializeField] GameObject _planetBitBlueprint;
+    [SerializeField] GameObject _metalBlueprint;
     [SerializeField] Disc _healthbarDisc;
     [SerializeField] Gradient _healthbarGradient;
 
@@ -23,11 +24,15 @@ public class Planet : MonoBehaviour
         {
             // Kill, spawn planetbits and resources
             
-            for (int i = 0; i < Random.Range(2, 5); i++) 
+            for (int i = 0; i < Random.Range(5, 9); i++) 
             {
                 Instantiate(_planetBitBlueprint, transform.position, transform.rotation);
             }
 
+            for (int i = 0; i < Random.Range(1, 2); i++) 
+            {
+                Instantiate(_metalBlueprint, transform.position, transform.rotation);
+            }
             Destroy(this.gameObject);
 
             return;

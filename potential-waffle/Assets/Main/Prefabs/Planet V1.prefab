@@ -52,6 +52,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 8
   _planetBitBlueprint: {fileID: 2560678486844360142, guid: 9af0e30a7de14564982e4c01ab00600e, type: 3}
+  _metalBlueprint: {fileID: 5755942492486178987, guid: 881f00f530c63a741bcec5d253b4e6e6, type: 3}
   _healthbarDisc: {fileID: 9144759076359028652}
   _healthbarGradient:
     serializedVersion: 2
