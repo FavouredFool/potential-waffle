@@ -17,9 +17,6 @@ public class ShipMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        //transform.RotateAround(Vector3.zero, Vector3.forward, Time.deltaTime * _moveSpeed);
-        //transform.Rotate(new Vector3(0, 0, Time.deltaTime * _rotateSpeed));
-
         Quaternion q = Quaternion.AngleAxis(_moveSpeed * Time.deltaTime, transform.forward);
         _rigidbody.MovePosition(q * _rigidbody.transform.position);
 
