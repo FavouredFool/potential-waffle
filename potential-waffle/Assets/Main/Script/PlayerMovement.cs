@@ -63,7 +63,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("triggered");
         ResourceCollectable resource = collider.gameObject.GetComponent<ResourceCollectable>();
     
         if (resource != null) 
