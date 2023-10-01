@@ -87,6 +87,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
+  _spriteRenderer: {fileID: 419819436580467274}
+  _damageColor: {r: 1, g: 0.3764706, b: 0.3764706, a: 1}
 --- !u!114 &2874347436835099280
 MonoBehaviour:
   m_ObjectHideFlags: 0

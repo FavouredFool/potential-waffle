@@ -13,10 +13,13 @@ public class Planet : MonoBehaviour
     [SerializeField] GameObject _metalBlueprint;
     [SerializeField] Disc _healthbarDisc;
     [SerializeField] Gradient _healthbarGradient;
+    [SerializeField] SpriteRenderer _spriteRenderer;
+    [SerializeField] Color _damageColor;
 
     int _currentHealth;
 
-    Tween _healthBarFadeOut;
+    Tween _healthBarFadeOutTween;
+    Tween _colorBlinkTween;
     float _discAlpha = 0;
 
     void Start()
@@ -39,6 +42,9 @@ public class Planet : MonoBehaviour
             {
                 Instantiate(_metalBlueprint, transform.position, transform.rotation);
             }
+
+            _healthBarFadeOutTween.Kill();
+            _colorBlinkTween.Kill();
             Destroy(this.gameObject);
 
             return;
@@ -54,12 +60,20 @@ public class Planet : MonoBehaviour
 
     public void ReduceHP(int damageAmount)
     {
+        // Flash white
+
         _currentHealth -= damageAmount;
 
-        if (_healthBarFadeOut != null)
+        if (_healthBarFadeOutTween != null)
         {
-            _healthBarFadeOut.Kill();
+            _healthBarFadeOutTween.Kill();
         }
-        _healthBarFadeOut = DOTween.To(x => _discAlpha = x, 0.2f, 0, 3).SetEase(Ease.InCubic);
+        _healthBarFadeOutTween = DOTween.To(x => _discAlpha = x, 0.2f, 0, 3).SetEase(Ease.InCubic);
+
+        if (_colorBlinkTween != null)
+        {
+            _colorBlinkTween.Kill();
+        }
+        _colorBlinkTween = DOTween.Sequence().Append(_spriteRenderer.DOColor(_damageColor, 0.05f)).Append(_spriteRenderer.DOColor(Color.white,0.05f));
     }
 }
