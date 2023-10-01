@@ -282,11 +282,6 @@ CircleCollider2D:
   m_Offset: {x: -0.11695614, y: 0}
   serializedVersion: 2
   m_Radius: 3.6229682
---- !u!212 &316643666 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 2161676157601356134, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-  m_PrefabInstance: {fileID: 3437079730180137689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &335403661
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +363,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &472689230
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Polyline 2D Transparent (IS_JOIN_MESH)(JOIN_BEVEL) (instance)
+  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - IS_JOIN_MESH
+  - JOIN_BEVEL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -2
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _StencilComp: 8
+    - _StencilID: 0
+    - _StencilOp: 0
+    - _StencilOpPass: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &504604063
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,19 +657,23 @@ Transform:
   m_Father: {fileID: 458757850}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &727876439
+--- !u!4 &735706689 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7382895553774746447, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
+  m_PrefabInstance: {fileID: 8910121739732348337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!21 &739421993
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Polyline 2D Transparent (IS_JOIN_MESH)(JOIN_BEVEL) (instance)
+  m_Name: Polyline 2D Transparent (JOIN_BEVEL) (instance)
   m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - IS_JOIN_MESH
   - JOIN_BEVEL
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -662,22 +700,6 @@ Material:
     - _ZTest: 4
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!4 &735706689 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7382895553774746447, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
-  m_PrefabInstance: {fileID: 8910121739732348337}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &807760203 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5024900623940883987, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-  m_PrefabInstance: {fileID: 3437079730180137689}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dd51d29965c9d04599a2fdc8a833c6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &889948641
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +784,44 @@ Transform:
   m_Father: {fileID: 458757850}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &894975683
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Polyline 2D Transparent (JOIN_BEVEL) (instance)
+  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - JOIN_BEVEL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -2
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _StencilComp: 8
+    - _StencilID: 0
+    - _StencilOp: 0
+    - _StencilOpPass: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &964346444
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,18 +869,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1234906632
+--- !u!21 &1261103078
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Polyline 2D Transparent (JOIN_BEVEL) (instance)
+  m_Name: Polyline 2D Transparent (IS_JOIN_MESH)(JOIN_BEVEL) (instance)
   m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - IS_JOIN_MESH
   - JOIN_BEVEL
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -1372,98 +1433,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _maxHealth
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _damageColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _damageColor.b
-      value: 0.8211317
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _damageColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _damageColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarDisc
-      value: 
-      objectReference: {fileID: 807760203}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _spriteRenderer
-      value: 
-      objectReference: {fileID: 316643666}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.ctime1
-      value: 17540
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.ctime2
-      value: 65535
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.ctime3
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key0.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key0.g
-      value: 0.047610905
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key0.r
-      value: 0.7169812
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key1.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key1.g
-      value: 0.55638766
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key1.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key2.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key2.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key2.r
-      value: 0.13751912
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key3.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.key3.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _remainingElementBlueprint
-      value: 
-      objectReference: {fileID: 2560678486844360142, guid: dc7c88d73c6cbf845b867bc9b22362bf, type: 3}
-    - target: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
-      propertyPath: _healthbarGradient.m_NumColorKeys
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1598,10 +1567,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8124742489430268604, guid: 252e069ee63eb0442b22d220dd1d8bbe, type: 3}
-      propertyPath: renderQueue
-      value: -2
-      objectReference: {fileID: 0}
     - target: {fileID: 8711109359177025520, guid: 252e069ee63eb0442b22d220dd1d8bbe, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1609,11 +1574,11 @@ PrefabInstance:
     - target: {fileID: 9112204812957105911, guid: 252e069ee63eb0442b22d220dd1d8bbe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1234906632}
+      objectReference: {fileID: 894975683}
     - target: {fileID: 9112204812957105911, guid: 252e069ee63eb0442b22d220dd1d8bbe, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 727876439}
+      objectReference: {fileID: 472689230}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1630,30 +1595,6 @@ PrefabInstance:
     - target: {fileID: 1268884537570056393, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3726806043653045589, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e2a95a724f2e5d54e9b403ec419d8bb7, type: 3}
-    - target: {fileID: 4629866858562681662, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
-      propertyPath: m_Size.y
-      value: 0.22828794
-      objectReference: {fileID: 0}
-    - target: {fileID: 4629866858562681662, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.008480668
-      objectReference: {fileID: 0}
-    - target: {fileID: 5792574844032056729, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5792574844032056729, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5792574844032056729, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6230925062522905027, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
       propertyPath: _resourceManager

@@ -149,8 +149,8 @@ MonoBehaviour:
   stencilReadMask: 255
   stencilWriteMask: 255
   pivot: 1
-  width: 0.05
-  height: 0.05
+  width: 0.04
+  height: 0.04
   type: 1
   cornerRadiusMode: 0
   cornerRadii: {x: 0.002, y: 0.002, z: 0.002, w: 0.002}
