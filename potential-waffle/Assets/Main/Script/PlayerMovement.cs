@@ -7,9 +7,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] ResourceManager _resourceManager;
     [SerializeField] GameObject _laserBlueprint; 
     [SerializeField] float _thrusterForce = 1;
+    [SerializeField] float _fireRatePerSecond = 1;
     [SerializeField] ParticleSystem _particles;
     [SerializeField] Transform _leftLaserSpawn;
     [SerializeField] Transform _rightLaserSpawn;
+
+
+    float _timeLastShot = float.NegativeInfinity;
 
     Rigidbody2D _rigidBody;
     Vector2 _velocity = Vector2.zero;
@@ -32,10 +36,14 @@ public class PlayerMovement : MonoBehaviour
 
     void ShootLaser()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-            Instantiate(_laserBlueprint, _leftLaserSpawn.position, _leftLaserSpawn.rotation);
-            Instantiate(_laserBlueprint, _rightLaserSpawn.position, _rightLaserSpawn.rotation);
+            if (Time.time - _timeLastShot > 1 / _fireRatePerSecond)
+            {
+                Instantiate(_laserBlueprint, _leftLaserSpawn.position, _leftLaserSpawn.rotation);
+                Instantiate(_laserBlueprint, _rightLaserSpawn.position, _rightLaserSpawn.rotation);
+                _timeLastShot = Time.time;
+            }
         }
     }
 

@@ -49,9 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shipTransform: {fileID: 0}
   _playerTransform: {fileID: 0}
-  ropeSegLen: 0.05
-  segmentLength: 10
-  lineWidth: 0.02
+  _circleCollider: {fileID: 0}
 --- !u!114 &8124742489430268604
 MonoBehaviour:
   m_ObjectHideFlags: 0
