@@ -9,6 +9,7 @@ public class ShipMovement : MonoBehaviour
     [SerializeField] float _moveSpeed = 2;
     [SerializeField] float _rotateSpeed = 10;
     [SerializeField] int _maxHealth;
+    [SerializeField] GameObject _remainingElementBlueprint;
     [SerializeField] Disc _healthbarDisc;
     [SerializeField] Gradient _healthbarGradient;
     [SerializeField] SpriteRenderer _spriteRenderer;
@@ -18,7 +19,7 @@ public class ShipMovement : MonoBehaviour
     int _currentHealth;
     Tween _healthBarFadeOutTween;
     Tween _colorBlinkTween;
-    float _discAlpha = 0.2f;
+    float _discAlpha = 0.1f;
 
     void Start()
     {
@@ -43,17 +44,11 @@ public class ShipMovement : MonoBehaviour
             // Game over!#
             // Does the station explode?
 
-            /*
-            for (int i = 0; i < Random.Range(5, 9); i++) 
+            
+            for (int i = 0; i < Random.Range(100, 200); i++) 
             {
                 Instantiate(_remainingElementBlueprint, transform.position, transform.rotation);
             }
-
-            for (int i = 0; i < Random.Range(_minResource, _maxResource+1); i++) 
-            {
-                Instantiate(_ResourceBlueprint, transform.position, transform.rotation);
-            }
-            */
 
             _healthBarFadeOutTween.Kill();
             _colorBlinkTween.Kill();
@@ -80,7 +75,7 @@ public class ShipMovement : MonoBehaviour
         {
             _healthBarFadeOutTween.Kill();
         }
-        _healthBarFadeOutTween = DOTween.To(x => _discAlpha = x, 0.5f, 0.2f, 3).SetEase(Ease.InCubic);
+        _healthBarFadeOutTween = DOTween.To(x => _discAlpha = x, 0.5f, 0.1f, 3).SetEase(Ease.InCubic);
 
         if (_colorBlinkTween != null)
         {
