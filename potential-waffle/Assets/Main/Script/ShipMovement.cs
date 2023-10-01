@@ -17,6 +17,8 @@ public class ShipMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        
+
         Quaternion q = Quaternion.AngleAxis(_moveSpeed * Time.deltaTime, transform.forward);
         _rigidbody.MovePosition(q * _rigidbody.transform.position);
 

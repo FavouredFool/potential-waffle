@@ -61,9 +61,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 worldPosMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         worldPosMouse.z = 0;
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, (worldPosMouse - transform.position).normalized);
-        
-        // Maybe i should set the rotation through the Rigidbody but eh
-        transform.rotation = rotation;
+
+        _rigidBody.SetRotation(rotation);
 
         // rotate around ANGLE!
         //_rigidBody.SetRotation(Quaternion.Angle(rotation, transform.rotation));

@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using Shapes;
 using UnityEngine;
 using DG.Tweening;
+using static ResourceManager;
+using Shapes;
 
-public class Planet : MonoBehaviour
+public class Hittable : MonoBehaviour
 {
+    [SerializeField] ResourceType _resourceType;
     [SerializeField] int _maxHealth;
-    [SerializeField] int _minMetal;
-    [SerializeField] int _maxMetal;
-    [SerializeField] GameObject _planetBitBlueprint;
-    [SerializeField] GameObject _metalBlueprint;
+    [SerializeField] int _minResource;
+    [SerializeField] int _maxResource;
+    [SerializeField] GameObject _remainingElementBlueprint;
+    [SerializeField] GameObject _ResourceBlueprint;
     [SerializeField] Disc _healthbarDisc;
     [SerializeField] Gradient _healthbarGradient;
     [SerializeField] SpriteRenderer _spriteRenderer;
@@ -35,12 +37,12 @@ public class Planet : MonoBehaviour
             
             for (int i = 0; i < Random.Range(5, 9); i++) 
             {
-                Instantiate(_planetBitBlueprint, transform.position, transform.rotation);
+                Instantiate(_remainingElementBlueprint, transform.position, transform.rotation);
             }
 
-            for (int i = 0; i < Random.Range(_minMetal, _maxMetal+1); i++) 
+            for (int i = 0; i < Random.Range(_minResource, _maxResource+1); i++) 
             {
-                Instantiate(_metalBlueprint, transform.position, transform.rotation);
+                Instantiate(_ResourceBlueprint, transform.position, transform.rotation);
             }
 
             _healthBarFadeOutTween.Kill();
@@ -75,5 +77,10 @@ public class Planet : MonoBehaviour
             _colorBlinkTween.Kill();
         }
         _colorBlinkTween = DOTween.Sequence().Append(_spriteRenderer.DOColor(_damageColor, 0.05f)).Append(_spriteRenderer.DOColor(Color.white,0.05f));
+    }
+
+    public ResourceType GetResourceType()
+    {
+        return _resourceType;
     }
 }

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 452327141301187230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.125, y: 0.125, z: 0.125}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2014892614821466686}
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e2a95a724f2e5d54e9b403ec419d8bb7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feb87acaf75f597419f22a9295b5f412, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,7 +123,7 @@ Transform:
   - {fileID: 4982385191252157879}
   - {fileID: 8472615796426464229}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3235957696992612134
 MeshFilter:
@@ -190,7 +190,7 @@ MonoBehaviour:
   _resourceManager: {fileID: 0}
   _laserBlueprint: {fileID: 2104474266285465732, guid: 14d7edd8e690677498965d4cb6f5c492, type: 3}
   _thrusterForce: 3
-  _fireRatePerSecond: 1
+  _fireRatePerSecond: 8
   _particles: {fileID: 7524387581308007346}
   _leftLaserSpawn: {fileID: 6162769498247746123}
   _rightLaserSpawn: {fileID: 3621426419851629793}
@@ -359,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3979229446819659595}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: -1.4, z: 0}
+  m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -5,11 +5,8 @@ using UnityEngine;
 public class PlanetSpawnManager : MonoBehaviour
 {
     [SerializeField] GameObject[] _planetBlueprints;
-
     [SerializeField] int[] _planetAmounts;
-
     [SerializeField] float[] _planetRetractStrength;
-
     [SerializeField] AnimationCurve _planet1Curve;
     [SerializeField] AnimationCurve _planet2Curve;
     [SerializeField] AnimationCurve _planet3Curve;
