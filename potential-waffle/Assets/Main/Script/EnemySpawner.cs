@@ -20,9 +20,6 @@ public class EnemySpawner : MonoBehaviour
     {
         if (Time.time - _timeLastWave > _timeBetweenWaves)
         {
-
-            Debug.Log("NEW WAVE");
-
             for (int i = 0; i < Random.Range(1, 4); i++)
             {
                 Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _spawnRingRadius;

@@ -23,6 +23,11 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
+        if (_ship == null)
+        {
+            return;
+        }
+
         // TODO this should be buffered for the feels
         transform.position = _ship.position;
         transform.rotation = Quaternion.LookRotation(Vector3.forward, (_ship.position - _planet.position).normalized);

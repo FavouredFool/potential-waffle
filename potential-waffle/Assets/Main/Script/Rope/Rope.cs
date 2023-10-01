@@ -52,12 +52,23 @@ public class Rope : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (_shipTransform == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         TestMaxDist();
         this.DrawRope();
     }
 
     private void FixedUpdate()
     {
+        if (_shipTransform == null)
+        {
+            return;
+        }
+        
         this.Simulate();
     }
 

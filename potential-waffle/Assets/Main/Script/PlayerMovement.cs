@@ -18,18 +18,29 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D _rigidBody;
     Vector2 _velocity = Vector2.zero;
 
+    ShipMovement _ship;
+
     void Start()
     {
         _rigidBody = GetComponent<Rigidbody2D>();
+        _ship = GameObject.FindGameObjectWithTag("Ship").GetComponent<ShipMovement>();
     }
 
     void Update()
     {
+        if (_ship == null)
+        {
+            return;
+        }
         ShootLaser();
     }
 
     void FixedUpdate()
     {
+        if (_ship == null)
+        {
+            return;
+        }
         RotatePlayer();
         MovePlayer();
     }
