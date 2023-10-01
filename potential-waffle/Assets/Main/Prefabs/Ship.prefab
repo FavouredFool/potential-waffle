@@ -440,6 +440,7 @@ MonoBehaviour:
   _shootingPointTransform: {fileID: 4141184230629152531}
   _fireRatePerSecond: 1
   _rotateSpeed: 2
+  _searchRadius: 4
 --- !u!1 &4469412376078259836
 GameObject:
   m_ObjectHideFlags: 0

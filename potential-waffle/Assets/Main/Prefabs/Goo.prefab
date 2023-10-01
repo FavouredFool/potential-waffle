@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendMode: 1
   scaleMode: 0
-  color: {r: 0.21465278, g: 0, b: 0.4339623, a: 1}
+  color: {r: 0.49549532, g: 0, b: 1, a: 1}
   detailLevel: 2
   renderQueue: -1
   zTest: 4
