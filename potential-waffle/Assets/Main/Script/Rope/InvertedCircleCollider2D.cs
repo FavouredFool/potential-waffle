@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(EdgeCollider2D))]
 public class InvertedCircleCollider2D : MonoBehaviour
 {
+
+    [SerializeField] float _lineIncrease = 0.5f;
     public float Radius;
 
     [Range(2, 100)]
@@ -16,6 +19,15 @@ public class InvertedCircleCollider2D : MonoBehaviour
     private void OnValidate()
     {
         Generate();
+    }
+
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(2))
+        {
+            Radius += _lineIncrease;
+            OnValidate();
+        }
     }
 
     private void Generate()

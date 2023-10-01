@@ -1206,6 +1206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1424592819}
   - component: {fileID: 1424592818}
+  - component: {fileID: 1424592820}
   m_Layer: 0
   m_Name: --- Managers
   m_TagString: Untagged
@@ -1240,6 +1241,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1424592820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424592817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92a9f835e9fe4e94fa7dac5cf3850775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _planet1Blueprint: {fileID: 3554678336957758587, guid: 74d1622422bffb44ba370176c6215607, type: 3}
+  _planet2Blueprint: {fileID: 3554678336957758587, guid: 65c181624350c6d4cb917041400e9c98, type: 3}
+  _planet3Blueprint: {fileID: 3554678336957758587, guid: 97fe4281c5543474a916992006678242, type: 3}
+  _planet1Curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.9978209
+      value: -0.99663115
+      inSlope: 2.166625
+      outSlope: 2.166625
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.044440262
+    - serializedVersion: 3
+      time: -0.14279452
+      value: -0.25941616
+      inSlope: 0.91325074
+      outSlope: 0.91325074
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.07755629
+    - serializedVersion: 3
+      time: 0.15176073
+      value: 0.28757876
+      inSlope: 0.79475087
+      outSlope: 0.79475087
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2.1764815
+      outSlope: 2.1764815
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.043445956
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _planet1Amount: 50
+  _planet1Offset: 2
 --- !u!4 &1738594609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 597482573274944673, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
@@ -1480,6 +1540,10 @@ PrefabInstance:
       propertyPath: _planet
       value: 
       objectReference: {fileID: 293120215}
+    - target: {fileID: 2638460192783646874, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
+      propertyPath: _initialZoom
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 9064546256221383509, guid: cb42bb048bf83bd4595ff85c698d5c63, type: 3}
       propertyPath: orthographic size
       value: 2.8
@@ -2016,6 +2080,10 @@ PrefabInstance:
     - target: {fileID: 4509161777999359656, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
       propertyPath: Radius
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509161777999359656, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
+      propertyPath: _lineIncrease
+      value: 0.41
       objectReference: {fileID: 0}
     - target: {fileID: 8050603096434069251, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
       propertyPath: m_RootOrder

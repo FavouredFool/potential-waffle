@@ -385,5 +385,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21f16f4221af57c4097ddd6cef24d0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _lineIncrease: 0.5
   Radius: 2
   NumEdges: 64
