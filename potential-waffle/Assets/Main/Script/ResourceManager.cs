@@ -41,7 +41,7 @@ public class ResourceManager : MonoBehaviour
 
     public bool DeductResources(int[] resources)
     {
-        if (!(MetalAmount >= resources[0] && GutsAmount > resources[1]))
+        if (!(MetalAmount >= resources[0] && GutsAmount >= resources[1]))
         {
             return false;
         }
