@@ -4,36 +4,53 @@ using UnityEngine;
 
 public class PlanetSpawnManager : MonoBehaviour
 {
-    [SerializeField] GameObject _planet1Blueprint;
-    [SerializeField] GameObject _planet2Blueprint;
-    [SerializeField] GameObject _planet3Blueprint;
+    [SerializeField] GameObject[] _planetBlueprints;
+
+    [SerializeField] int[] _planetAmounts;
+
+    [SerializeField] float[] _planetRetractStrength;
 
     [SerializeField] AnimationCurve _planet1Curve;
+    [SerializeField] AnimationCurve _planet2Curve;
+    [SerializeField] AnimationCurve _planet3Curve;
 
-    [SerializeField] int _planet1Amount = 100;
-
-    [SerializeField] float _planet1Offset = 2;
+    [SerializeField] float _planetOffsets = 2;
 
     float _orbitRadius = 4.5f;
 
     
-
+    AnimationCurve[] _planetCurves;
 
 
     void Start()
     {
-        for(int i = 0; i < _planet1Amount; i++)
+        _planetCurves = new[] {_planet1Curve, _planet2Curve, _planet3Curve};
+
+        for (int j = 0; j < _planetAmounts.Length; j++)
         {
-            // 1. Have the planet be in the general area of the orbit + offset.
-            // 2. Have the planet far away from the other planets
+            List<Vector2> planetSpawns = new();
 
-            Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _orbitRadius;
+            for(int i = 0; i < _planetAmounts[j]; i++)
+            {
+                // 1. Have the planet be in the general area of the orbit + offset.
+                // 2. Have the planet far away from the other planets
+                
 
-            float weightedRandomNegativePositiveOne = _planet1Curve.Evaluate(Random.Range(-1f, 1f));
-            
-            Vector2 offsetAdjustedPosition = randomOnOrbit + randomOnOrbit.normalized * _planet1Offset * weightedRandomNegativePositiveOne;
+                Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _orbitRadius;
+                float weightedRandomNegativePositiveOne = _planetCurves[j].Evaluate(Random.Range(-1f, 1f));
+                Vector2 offsetAdjustedPosition = randomOnOrbit + randomOnOrbit.normalized * _planetOffsets * weightedRandomNegativePositiveOne;
 
-            Instantiate(_planet1Blueprint, offsetAdjustedPosition, Quaternion.Euler(0, 0, Random.Range(0, 360)));
-        }
+                for(int k = 0; k < planetSpawns.Count; k++)
+                {
+                    float distMag = (offsetAdjustedPosition - planetSpawns[k]).magnitude;
+                    float inversePushAmount = Mathf.Max(_planetRetractStrength[j] - distMag, 0);
+                    offsetAdjustedPosition += inversePushAmount * (offsetAdjustedPosition - planetSpawns[k]).normalized;
+                }
+
+                Instantiate(_planetBlueprints[j], offsetAdjustedPosition, Quaternion.Euler(0, 0, Random.Range(0, 360)));
+
+                planetSpawns.Add(offsetAdjustedPosition);
+            }
+        } 
     }
 }
