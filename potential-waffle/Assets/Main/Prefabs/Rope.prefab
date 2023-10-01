@@ -64,7 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendMode: 1
   scaleMode: 0
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
   detailLevel: 2
   renderQueue: -1
   zTest: 4
@@ -78,7 +78,7 @@ MonoBehaviour:
   stencilWriteMask: 255
   points: []
   geometry: 0
-  joins: 1
+  joins: 3
   closed: 0
   thickness: 0.03
   thicknessSpace: 0
@@ -110,7 +110,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 34fc5346917eea54aba37bcbe8ff730a, type: 2}
+  - {fileID: 2100000, guid: a3be56a1f984f5e428b969dba3b03c8b, type: 2}
+  - {fileID: 2100000, guid: 7e402ea2390c30947b7ae821c6d26530, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
