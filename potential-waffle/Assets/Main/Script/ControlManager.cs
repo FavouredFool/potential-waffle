@@ -6,12 +6,14 @@ using DG.Tweening;
 
 public class ControlManager : MonoBehaviour
 {
+    [SerializeField] GameObject _startScreen;
     [SerializeField] GameObject _endScreen;
 
     GameObject _ship;
 
     void Start()
     {
+        Time.timeScale = 0;
         _ship = GameObject.FindGameObjectWithTag("Ship");
     }
     
@@ -26,5 +28,11 @@ public class ControlManager : MonoBehaviour
     public void LoadGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void StartGame()
+    {
+        _startScreen.SetActive(false);
+        Time.timeScale = 1;
     }
 }
