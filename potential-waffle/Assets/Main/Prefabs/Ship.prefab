@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5906258722969642663}
   m_Layer: 12
   m_Name: Ship
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -400,7 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6765908977006454007}
   - component: {fileID: 1439827006499654035}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _laserBlueprint: {fileID: 2104474266285465732, guid: c7019bac3f987524788d72e2ad43bd9e, type: 3}
   _shootingPointTransform: {fileID: 4141184230629152531}
-  _fireRatePerSecond: 1
-  _rotateSpeed: 2
-  _searchRadius: 4
+  _fireRatePerSecond: 0.5
+  _rotateSpeed: 1
+  _searchRadius: 2.5
 --- !u!1 &4469412376078259836
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4141184230629152531}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: ShootingPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5933631123069191256}
   - component: {fileID: 2462248214787506656}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}

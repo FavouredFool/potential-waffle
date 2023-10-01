@@ -62,7 +62,7 @@ public class Gun : MonoBehaviour
         {
             _gunLookDirection = (_activeEnemy.transform.position - transform.position).normalized;
             Quaternion goalQuat = Quaternion.LookRotation(Vector3.forward, (Vector3)_gunLookDirection);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, goalQuat, _rotateSpeed*4);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, goalQuat, _rotateSpeed*10);
         }
     }
 

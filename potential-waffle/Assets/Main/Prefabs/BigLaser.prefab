@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4692563341231119871}
   - component: {fileID: 3580550245207231185}
   - component: {fileID: 2758215298406588838}
-  m_Layer: 6
+  m_Layer: 15
   m_Name: BigLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -206,5 +206,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _laserType: 1
-  _shootingForce: 100
+  _shootingForce: 10
   _timeTillKill: 2

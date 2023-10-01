@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
         // Aufrecht bleiben relativ zur Erde
         // immer in Richtung des Schiffs b-linen 
 
-        Vector2 direction = _ship.position - transform.position;
+        Vector2 direction = (_ship.position - transform.position).normalized;
         _rigidbody.AddForce(direction * _speed);
 
         float goalRotation = Vector2.SignedAngle(Vector2.up, transform.position);
