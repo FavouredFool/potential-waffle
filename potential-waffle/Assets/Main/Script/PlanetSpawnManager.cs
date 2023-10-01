@@ -34,22 +34,43 @@ public class PlanetSpawnManager : MonoBehaviour
             {
                 // 1. Have the planet be in the general area of the orbit + offset.
                 // 2. Have the planet far away from the other planets
-                
 
-                Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _orbitRadius;
-                float weightedRandomNegativePositiveOne = _planetCurves[j].Evaluate(Random.Range(-1f, 1f));
-                Vector2 offsetAdjustedPosition = randomOnOrbit + randomOnOrbit.normalized * _planetOffsets * weightedRandomNegativePositiveOne;
+                Vector2 planetPosition = Vector2.zero;
 
-                for(int k = 0; k < planetSpawns.Count; k++)
+                int breakOutCounter = 0;
+                while(breakOutCounter < 10000) 
                 {
-                    float distMag = (offsetAdjustedPosition - planetSpawns[k]).magnitude;
-                    float inversePushAmount = Mathf.Max(_planetRetractStrength[j] - distMag, 0);
-                    offsetAdjustedPosition += inversePushAmount * (offsetAdjustedPosition - planetSpawns[k]).normalized;
+                    breakOutCounter++;
+                
+                    Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _orbitRadius;
+                    float weightedRandomNegativePositiveOne = _planetCurves[j].Evaluate(Random.Range(-1f, 1f));
+                    planetPosition = randomOnOrbit + randomOnOrbit.normalized * _planetOffsets * weightedRandomNegativePositiveOne;
+
+                    bool breakout = true;
+                    for(int k = 0; k < planetSpawns.Count; k++)
+                    {
+                        if ((planetPosition - planetSpawns[k]).magnitude < _planetRetractStrength[j])
+                        {
+                            // try positions until you find a position where the planet is sufficiently far away from all other planets
+                            breakout = false;
+                            break;
+                        }
+                    }
+
+                    if (breakout)
+                    {
+                        break;
+                    }
                 }
 
-                Instantiate(_planetBlueprints[j], offsetAdjustedPosition, Quaternion.Euler(0, 0, Random.Range(0, 360)));
+                if (breakOutCounter >= 10000)
+                {
+                    Debug.LogWarning("BROKEN OUT OF ENDLESS LOOP");
+                }
 
-                planetSpawns.Add(offsetAdjustedPosition);
+                Instantiate(_planetBlueprints[j], planetPosition, Quaternion.Euler(0, 0, Random.Range(0, 360)));
+
+                planetSpawns.Add(planetPosition);
             }
         } 
     }
