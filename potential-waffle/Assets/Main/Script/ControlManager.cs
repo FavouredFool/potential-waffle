@@ -18,6 +18,7 @@ public class ControlManager : MonoBehaviour
     {
         _hud.SetActive(false);
         _startScreen.SetActive(true);
+        _skillTree.SetActive(false);
         Time.timeScale = 0;
         _ship = GameObject.FindGameObjectWithTag("Ship");
     }

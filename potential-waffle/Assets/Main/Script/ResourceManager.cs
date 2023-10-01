@@ -14,7 +14,7 @@ public class ResourceManager : MonoBehaviour
     public int MetalAmount {get; set;} = 0;
     public int GutsAmount {get; set;} = 0;
 
-    void Start()
+    void Update()
     {
         UpdateHUD();
     }
@@ -29,8 +29,6 @@ public class ResourceManager : MonoBehaviour
         {
             GutsAmount += 1;
         }
-
-        UpdateHUD();
     }
 
     public void UpdateHUD()

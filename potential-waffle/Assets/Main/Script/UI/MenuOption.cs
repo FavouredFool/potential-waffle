@@ -10,6 +10,8 @@ public class MenuOption : MonoBehaviour
     [SerializeField] int[] _unlockCost;
     [SerializeField] MenuOption[] _requiredMenuOptions;
     [SerializeField] Skilltree _skilltree;
+    [SerializeField] Text _metalCostAmount;
+    [SerializeField] Text _gutsCostAmount;
 
     Image _image;
 
@@ -18,6 +20,17 @@ public class MenuOption : MonoBehaviour
     public void Awake()
     {
         _image = GetComponent<Image>();
+
+        if (_metalCostAmount != null)
+        {
+            _metalCostAmount.text = _unlockCost[0].ToString();
+        }
+        
+        if (_gutsCostAmount != null)
+        {
+            _gutsCostAmount.text = _unlockCost[1].ToString();
+        }
+        
     }
 
     public void Click()
