@@ -38,4 +38,16 @@ public class ResourceManager : MonoBehaviour
         _metalCounter.text = MetalAmount.ToString();
         _gutsCounter.text = GutsAmount.ToString();
     }
+
+    public bool DeductResources(int[] resources)
+    {
+        if (!(MetalAmount >= resources[0] && GutsAmount > resources[1]))
+        {
+            return false;
+        }
+
+        MetalAmount -= resources[0];
+        GutsAmount -= resources[1];
+        return true;
+    }
 }
