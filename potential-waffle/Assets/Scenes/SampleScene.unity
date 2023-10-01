@@ -1391,6 +1391,10 @@ PrefabInstance:
       propertyPath: _resourceManager
       value: 
       objectReference: {fileID: 1424592818}
+    - target: {fileID: 6230925062522905027, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
+      propertyPath: _fireRatePerSecond
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7382895553774746447, guid: 1989f9572c7cfce4480be6de478acfd5, type: 3}
       propertyPath: m_RootOrder
       value: -1
