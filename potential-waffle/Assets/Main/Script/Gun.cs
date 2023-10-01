@@ -18,11 +18,13 @@ public class Gun : MonoBehaviour
     Vector2 _gunLookDirection = Vector2.up;
     Enemy _activeEnemy = null;
 
+    float _closestDistance = float.PositiveInfinity;
+
     void Update()
     {
         if (_activeEnemy != null)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, float.PositiveInfinity, LayerMask.GetMask("Enemy"));
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, _closestDistance, LayerMask.GetMask("Enemy"));
 
             if (hit)
             {
@@ -38,15 +40,16 @@ public class Gun : MonoBehaviour
     {
         Enemy [] enemies = GameObject.FindGameObjectsWithTag("Enemy").Select(e => e.GetComponent<Enemy>()).ToArray();
 
-        float smallestDist = float.PositiveInfinity;
+        _closestDistance = float.PositiveInfinity;
+
         foreach(Enemy enemy in enemies)
         {
             float dist = (enemy.transform.position - transform.position).magnitude;
             if (dist <= _searchRadius)
             {
-                if (dist < smallestDist)
+                if (dist < _closestDistance)
                 {
-                    smallestDist = dist;
+                    _closestDistance = dist;
                     _activeEnemy = enemy;
                 }
             }
