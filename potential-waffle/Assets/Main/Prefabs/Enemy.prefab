@@ -189,7 +189,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   _spriteRenderer: {fileID: 8426385719993766032}
-  _damageColor: {r: 0.654902, g: 0.79607844, b: 1, a: 0}
+  _damageColor: {r: 0.5151835, g: 0.4481132, b: 1, a: 1}
 --- !u!50 &1416243457295264802
 Rigidbody2D:
   serializedVersion: 4

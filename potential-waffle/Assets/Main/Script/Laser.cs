@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using static ResourceManager;
 
 public class Laser : MonoBehaviour
 {
@@ -28,11 +29,29 @@ public class Laser : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        Planet planet = collision.gameObject.GetComponent<Planet>();
+        Hittable hittable = collision.gameObject.GetComponent<Hittable>();
 
-        if (planet != null)
+        ResourceType resourceType = hittable.GetResourceType();
+
+        if (hittable != null)
         {
-            planet.ReduceHP(1);
+            if (resourceType == ResourceType.METAL)
+            {
+                hittable.ReduceHP(1);
+            }
+            else
+            {
+                if (_laserType == LaserType.BIG)
+                {
+                    hittable.ReduceHP(1);
+                }
+                else
+                {
+                    hittable.ReduceHP(0);
+                }
+            }
+
+            
         }
 
         if (_scaleTween != null)

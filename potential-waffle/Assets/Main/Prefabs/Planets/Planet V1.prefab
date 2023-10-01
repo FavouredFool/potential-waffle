@@ -89,7 +89,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   _spriteRenderer: {fileID: 419819436580467274}
-  _damageColor: {r: 1, g: 0.37254903, b: 0.37254903, a: 0}
+  _damageColor: {r: 1, g: 0.37254903, b: 0.37254903, a: 1}
 --- !u!114 &2874347436835099280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blendMode: 1
   scaleMode: 0
-  color: {r: 1, g: 0.69803923, b: 0.53333336, a: 0.101960786}
+  color: {r: 1, g: 0.8, b: 0.56078434, a: 0}
   detailLevel: 2
   renderQueue: -1
   zTest: 4
@@ -436,13 +436,13 @@ MonoBehaviour:
   stencilWriteMask: 255
   type: 3
   colorMode: 0
-  colorOuterStart: {r: 1, g: 1, b: 1, a: 1}
-  colorInnerEnd: {r: 1, g: 1, b: 1, a: 1}
-  colorOuterEnd: {r: 1, g: 1, b: 1, a: 1}
+  colorOuterStart: {r: 1, g: 0.8, b: 0.56078434, a: 0}
+  colorInnerEnd: {r: 1, g: 0.8, b: 0.56078434, a: 0}
+  colorOuterEnd: {r: 1, g: 0.8, b: 0.56078434, a: 0}
   geometry: 0
   angUnitInput: 1
   angRadiansStart: 1.5707964
-  angRadiansEnd: 7.8539815
+  angRadiansEnd: 7.853982
   radius: 0.2
   radiusSpace: 0
   thickness: 0.03

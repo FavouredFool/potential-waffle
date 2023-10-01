@@ -78,4 +78,9 @@ public class Hittable : MonoBehaviour
         }
         _colorBlinkTween = DOTween.Sequence().Append(_spriteRenderer.DOColor(_damageColor, 0.05f)).Append(_spriteRenderer.DOColor(Color.white,0.05f));
     }
+
+    public ResourceType GetResourceType()
+    {
+        return _resourceType;
+    }
 }
