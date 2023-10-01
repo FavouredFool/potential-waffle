@@ -162,6 +162,7 @@ MonoBehaviour:
   _moveSpeed: 4
   _rotateSpeed: 20
   _maxHealth: 0
+  _remainingElementBlueprint: {fileID: 0}
   _healthbarDisc: {fileID: 0}
   _healthbarGradient:
     serializedVersion: 2
