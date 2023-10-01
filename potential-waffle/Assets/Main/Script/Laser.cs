@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
+    public enum LaserType {SMALL, BIG}
+
+    [SerializeField] LaserType _laserType;
     [SerializeField] float _shootingForce = 3f;
     [SerializeField] float _timeTillKill = 0.35f;
 

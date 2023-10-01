@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9087581118337046692}
-  - component: {fileID: 4400970500941421678}
+  - component: {fileID: 8312342753704023461}
   - component: {fileID: 2874347436835099280}
   - component: {fileID: 8562463381677652625}
   - component: {fileID: 8562419588343263412}
@@ -39,7 +39,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4400970500941421678
+--- !u!114 &8312342753704023461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,20 +48,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 3554678336957758587}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 366733a9d814f2742b9eb341bc3cf004, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b4865cd5e4af6b4ca3a5bc15e24bd94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _resourceType: 0
   _maxHealth: 100
-  _minMetal: 100
-  _maxMetal: 128
-  _planetBitBlueprint: {fileID: 2560678486844360142, guid: 9af0e30a7de14564982e4c01ab00600e, type: 3}
-  _metalBlueprint: {fileID: 5755942492486178987, guid: 881f00f530c63a741bcec5d253b4e6e6, type: 3}
-  _healthbarDisc: {fileID: 9144759076359028652}
+  _minResource: 100
+  _maxResource: 128
+  _remainingElementBlueprint: {fileID: 2560678486844360142, guid: 9af0e30a7de14564982e4c01ab00600e, type: 3}
+  _ResourceBlueprint: {fileID: 5755942492486178987, guid: 881f00f530c63a741bcec5d253b4e6e6, type: 3}
+  _healthbarDisc: {fileID: 9144759076359028652, guid: 74d1622422bffb44ba370176c6215607, type: 3}
   _healthbarGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 0.1084907, b: 0.10849059, a: 1}
-    key1: {r: 1, g: 0.5460526, b: 0, a: 1}
-    key2: {r: 1, g: 0.80044395, b: 0.5613208, a: 0}
+    key0: {r: 1, g: 0.10980392, b: 0.10980392, a: 1}
+    key1: {r: 1, g: 0.54509807, b: 0, a: 1}
+    key2: {r: 1, g: 0.8, b: 0.56078434, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -87,8 +88,8 @@ MonoBehaviour:
     m_ColorSpace: -1
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
-  _spriteRenderer: {fileID: 419819436580467274}
-  _damageColor: {r: 1, g: 0.3764706, b: 0.3764706, a: 1}
+  _spriteRenderer: {fileID: 419819436580467274, guid: 74d1622422bffb44ba370176c6215607, type: 3}
+  _damageColor: {r: 1, g: 0.37254903, b: 0.37254903, a: 0}
 --- !u!114 &2874347436835099280
 MonoBehaviour:
   m_ObjectHideFlags: 0
