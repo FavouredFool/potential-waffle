@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
 
         float t = (Time.time - _startTime) / _reachMaxTime;
 
-        if (Time.time - _timeLastWave > Mathf.Max(t * -_timeDecreaseModifier + _timeStart, 0.25f))
+        if (Time.time - _timeLastWave > Mathf.Max(t * -_timeDecreaseModifier + _timeStart, 0.05f))
         {
             Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _spawnRingRadius;
 
