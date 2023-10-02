@@ -84,4 +84,11 @@ public class ShipMovement : MonoBehaviour
         _colorBlinkTween = DOTween.Sequence().Append(_spriteRenderer.DOColor(_damageColor, 0.05f)).Append(_spriteRenderer.DOColor(Color.white,0.05f));
     }
 
+    public void UpgradeHealth()
+    {
+        // 4 -> 8 -> 16
+        _maxHealth *= 2;
+        _currentHealth += _maxHealth / 2;
+    }
+
 }

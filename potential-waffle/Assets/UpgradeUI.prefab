@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 0400000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 8062194187230851551}
   - {fileID: 1785103266821876919}
@@ -3752,7 +3752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 0300000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 1700351900666097755}
   - {fileID: 6847008590387954547}
@@ -4306,7 +4306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 0200000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
@@ -5095,9 +5095,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: 0900000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
-  - {fileID: 6847008590387954547}
+  - {fileID: 1785103266821876919}
   - {fileID: 1406905609058814246}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 1483551099776111147}
@@ -5411,7 +5411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 0700000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 721112026612188127}
   - {fileID: 1785103266821876919}
@@ -7124,7 +7124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: 0800000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -8135,7 +8135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 4
-  _unlockCost: 0a00000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -8292,7 +8292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 0600000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6066923394180860478}
   - {fileID: 6847008590387954547}
@@ -8836,7 +8836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 0500000000000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}

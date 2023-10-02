@@ -172,44 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &195835018
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Polyline 2D Transparent (JOIN_BEVEL) (instance)
-  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - JOIN_BEVEL
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -2
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _StencilComp: 8
-    - _StencilID: 0
-    - _StencilOp: 0
-    - _StencilOpPass: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _ZOffsetFactor: 0
-    - _ZOffsetUnits: 0
-    - _ZTest: 4
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &229953979
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,45 +331,6 @@ CircleCollider2D:
   m_Offset: {x: -0.11695614, y: 0}
   serializedVersion: 2
   m_Radius: 3.6229682
---- !u!21 &299909622
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Polyline 2D Transparent (IS_JOIN_MESH)(JOIN_BEVEL) (instance)
-  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - IS_JOIN_MESH
-  - JOIN_BEVEL
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -2
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _StencilComp: 8
-    - _StencilID: 0
-    - _StencilOp: 0
-    - _StencilOpPass: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _ZOffsetFactor: 0
-    - _ZOffsetUnits: 0
-    - _ZTest: 4
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &335403661
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,6 +412,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &474095048
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Polyline 2D Transparent (IS_JOIN_MESH)(JOIN_BEVEL) (instance)
+  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - IS_JOIN_MESH
+  - JOIN_BEVEL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -2
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _StencilComp: 8
+    - _StencilID: 0
+    - _StencilOp: 0
+    - _StencilOpPass: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &494722089
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Polyline 2D Transparent (JOIN_BEVEL) (instance)
+  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - JOIN_BEVEL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -2
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _StencilComp: 8
+    - _StencilID: 0
+    - _StencilOp: 0
+    - _StencilOpPass: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &504604063
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +766,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8050603096434069251, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
   m_PrefabInstance: {fileID: 3437079730180137689}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &564386183 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8270328397675161144, guid: bfa74ffa7d1cc7e40a48c92c5b1ebd61, type: 3}
+  m_PrefabInstance: {fileID: 3437079730180137689}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efdba9d04f0e0c84f82bf87f7991017e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &569999877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,45 +1037,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &653696464
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Polyline 2D Transparent (IS_JOIN_MESH)(JOIN_BEVEL) (instance)
-  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - IS_JOIN_MESH
-  - JOIN_BEVEL
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -2
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _StencilComp: 8
-    - _StencilID: 0
-    - _StencilOp: 0
-    - _StencilOpPass: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _ZOffsetFactor: 0
-    - _ZOffsetUnits: 0
-    - _ZTest: 4
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &679894985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1114,6 +1086,7 @@ MonoBehaviour:
   _gun: {fileID: 635832048}
   _circleCollider: {fileID: 427760219}
   _playerMovement: {fileID: 735706693}
+  _ship: {fileID: 564386183}
   ResourceManager: {fileID: 1424592818}
   TextBGs:
   - {fileID: 21300000, guid: 5d01fd4b1394faa499c3b68300b4e282, type: 3}
@@ -1645,6 +1618,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!21 &1046036215
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Polyline 2D Transparent (JOIN_BEVEL) (instance)
+  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - JOIN_BEVEL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -2
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _StencilComp: 8
+    - _StencilID: 0
+    - _StencilOp: 0
+    - _StencilOpPass: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &1062464423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,44 +1929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &1309070841
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Polyline 2D Transparent (JOIN_BEVEL) (instance)
-  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - JOIN_BEVEL
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -2
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Ints: []
-    m_Floats:
-    - _ColorMask: 15
-    - _StencilComp: 8
-    - _StencilID: 0
-    - _StencilOp: 0
-    - _StencilOpPass: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    - _ZOffsetFactor: 0
-    - _ZOffsetUnits: 0
-    - _ZTest: 4
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!114 &1362656060 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 597840578262566147, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
@@ -2391,6 +2364,45 @@ MonoBehaviour:
   _endScreen: {fileID: 1944682032}
   _hud: {fileID: 16218605}
   _skillTree: {fileID: 679894985}
+--- !u!21 &1439781090
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Polyline 2D Transparent (IS_JOIN_MESH)(JOIN_BEVEL) (instance)
+  m_Shader: {fileID: 4800000, guid: 99a1df08fb8c6bc4b985a2eb44648277, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - IS_JOIN_MESH
+  - JOIN_BEVEL
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -2
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _ColorMask: 15
+    - _StencilComp: 8
+    - _StencilID: 0
+    - _StencilOp: 0
+    - _StencilOpPass: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _ZOffsetFactor: 0
+    - _ZOffsetUnits: 0
+    - _ZTest: 4
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!224 &1547810356 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7636173331735036607, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
@@ -3026,18 +3038,10 @@ PrefabInstance:
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 622682108694475679, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 673384508698793227, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 673384508698793227, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 699497697093869919, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
@@ -3046,10 +3050,6 @@ PrefabInstance:
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 721112026612188127, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1309629176239406103, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
@@ -3058,10 +3058,6 @@ PrefabInstance:
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 1406905609058814246, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1652729873623297219, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
@@ -3070,10 +3066,6 @@ PrefabInstance:
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 1700351900666097755, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1785103266821876919, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
@@ -3086,10 +3078,6 @@ PrefabInstance:
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 3547948453939984390, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3974255288138891131, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
@@ -3114,18 +3102,10 @@ PrefabInstance:
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 5717895300508211670, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6066923394180860478, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 6066923394180860478, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6847008590387954547, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
       propertyPath: _skilltree
       value: 
@@ -3230,10 +3210,6 @@ PrefabInstance:
       propertyPath: _skilltree
       value: 
       objectReference: {fileID: 679894987}
-    - target: {fileID: 8062194187230851551, guid: a97d6b56ab3b5c84eae079789652e7ae, type: 3}
-      propertyPath: _unlockCost.Array.data[0]
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3505,11 +3481,11 @@ PrefabInstance:
     - target: {fileID: 9112204812957105911, guid: 252e069ee63eb0442b22d220dd1d8bbe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 195835018}
+      objectReference: {fileID: 494722089}
     - target: {fileID: 9112204812957105911, guid: 252e069ee63eb0442b22d220dd1d8bbe, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 299909622}
+      objectReference: {fileID: 474095048}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
