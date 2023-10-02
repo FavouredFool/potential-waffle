@@ -14,6 +14,7 @@ public class ControlManager : MonoBehaviour
     [SerializeField] GameObject _skillTree;
     [SerializeField] EnemySpawner _spawner;
     [SerializeField] Text _timer;
+    [SerializeField] Button _menuButton;
 
 
     GameObject _ship;
@@ -65,12 +66,15 @@ public class ControlManager : MonoBehaviour
     {
         _skillTree.SetActive(!_skillTree.activeSelf);
 
+
         if (_skillTree.activeSelf)
         {
+            _menuButton.gameObject.SetActive(false);
             Time.timeScale = 0;
         }
         else
         {
+            _menuButton.gameObject.SetActive(true);
             Time.timeScale = 1;
         }
     }
