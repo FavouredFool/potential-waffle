@@ -45,7 +45,7 @@ public class ShipMovement : MonoBehaviour
             // Does the station explode?
 
             
-            for (int i = 0; i < Random.Range(100, 200); i++) 
+            for (int i = 0; i < Random.Range(60, 70); i++) 
             {
                 Instantiate(_remainingElementBlueprint, transform.position, transform.rotation);
             }
