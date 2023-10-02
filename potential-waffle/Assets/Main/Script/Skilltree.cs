@@ -12,6 +12,7 @@ public class Skilltree : MonoBehaviour
     [SerializeField] InvertedCircleCollider2D _circleCollider;
     [SerializeField] PlayerMovement _playerMovement;
     [SerializeField] ShipMovement _ship;
+    [SerializeField] EnemySpawner _spawner;
 
     public enum SkillEffect {ROPE, SHIPGUN, SHIPGUNSPEED, SHIPHEALTH, SHIPSPEED, PISTOL, SPEED, SLOW, RANGE}
     public ResourceManager ResourceManager;
@@ -101,7 +102,7 @@ public class Skilltree : MonoBehaviour
 
     public void SlowEffect()
     {
-
+        _spawner.UpdateSlow();
     }
 
     public void RangeEffect()

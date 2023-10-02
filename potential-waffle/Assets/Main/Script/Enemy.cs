@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Timeline;
 using DG.Tweening;
+using System.Reflection.Emit;
 
 public class Enemy : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Enemy : MonoBehaviour
     Tween _slowTween;
 
     float _currentSpeed;
+    float _slowMultiplicator = 1;
     
 
     void Start()
@@ -68,7 +70,12 @@ public class Enemy : MonoBehaviour
     {
         if (_slowTween != null) _slowTween.Kill();
 
-        _slowTween = DOTween.To(x => _currentSpeed = x, _speed / _slowAmount, _speed, _slowDuration);
+        _slowTween = DOTween.To(x => _currentSpeed = x, _speed / (_slowAmount * _slowMultiplicator), _speed, _slowDuration * _slowMultiplicator).SetEase(Ease.OutCubic);
+    }
+
+    public void SetSlowMultiplicator(int multiplicator)
+    {
+        _slowMultiplicator = multiplicator;
     }
 
 }
