@@ -70,7 +70,7 @@ public class Hittable : MonoBehaviour
         {
             _healthBarFadeOutTween.Kill();
         }
-        _healthBarFadeOutTween = DOTween.To(x => _discAlpha = x, 0.2f, 0, 3).SetEase(Ease.InCubic);
+        _healthBarFadeOutTween = DOTween.To(x => _discAlpha = x, 0.25f, 0, 3).SetEase(Ease.InCubic);
 
         if (_colorBlinkTween != null)
         {

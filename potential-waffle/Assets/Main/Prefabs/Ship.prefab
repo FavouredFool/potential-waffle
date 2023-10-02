@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 4
   _rotateSpeed: 20
-  _maxHealth: 3
+  _maxHealth: 7
   _remainingElementBlueprint: {fileID: 2560678486844360142, guid: dc7c88d73c6cbf845b867bc9b22362bf, type: 3}
   _healthbarDisc: {fileID: 5024900623940883987}
   _healthbarGradient:
@@ -509,12 +509,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4c95e1a696f3ea49a2922613913b2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _laserBlueprint: {fileID: 2104474266285465732, guid: c7019bac3f987524788d72e2ad43bd9e, type: 3}
+  _laserBlueprint: {fileID: 2758215298406588838, guid: c7019bac3f987524788d72e2ad43bd9e, type: 3}
   _shootingPointTransform: {fileID: 4141184230629152531}
   _fireRatePerSecond: 1
   _rotateSpeed: 1
   _searchRadius: 1.5
-  _searchRadiusIncrease: 1.5
+  _searchRadiusIncrease: 0.4
 --- !u!1 &4469412376078259836
 GameObject:
   m_ObjectHideFlags: 0

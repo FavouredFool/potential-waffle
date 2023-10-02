@@ -10,6 +10,7 @@ public class Skilltree : MonoBehaviour
     [SerializeField] CameraMovement _cameraMovement;
     [SerializeField] Gun _gun;
     [SerializeField] InvertedCircleCollider2D _circleCollider;
+    [SerializeField] PlayerMovement _playerMovement;
 
     public enum SkillEffect {ROPE, SHIPGUN, SHIPGUNSPEED, SHIPHEALTH, SHIPSPEED, PISTOL, SPEED, SLOW, RANGE}
     public ResourceManager ResourceManager;
@@ -67,7 +68,7 @@ public class Skilltree : MonoBehaviour
 
     public void ShipGunEffect()
     {
-
+        _gun.UpgradeDamageMultiplier();
     }
 
     public void ShipGunSpeedEffect()
@@ -87,6 +88,8 @@ public class Skilltree : MonoBehaviour
 
     public void PistolEffect()
     {
+        // Multiply Attack speed by 2
+        _playerMovement.UpgradeFireRate();
 
     }
 

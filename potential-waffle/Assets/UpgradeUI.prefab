@@ -226,11 +226,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 0000000000000000
+  _unlockCost: 0400000000000000
   _requiredMenuOptions:
   - {fileID: 8062194187230851551}
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 2865505242171512325}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &362097742978229024
 GameObject:
@@ -940,10 +942,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000000000000
+  _unlockCost: 0000000004000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 7812725804136661805}
   IsUnlocked: 0
 --- !u!1 &1161873977131941058
 GameObject:
@@ -2799,6 +2803,8 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 2879777233765229116}
+  _gutsCostAmount: {fileID: 7138949422273699358}
   IsUnlocked: 0
 --- !u!1 &2571503058282546453
 GameObject:
@@ -2950,10 +2956,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 7
-  _unlockCost: 0000000000000000
+  _unlockCost: 0000000007000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 939918024234070364}
   IsUnlocked: 0
 --- !u!1 &2652039390712838578
 GameObject:
@@ -3744,11 +3752,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 0000000000000000
+  _unlockCost: 0300000000000000
   _requiredMenuOptions:
   - {fileID: 1700351900666097755}
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 5667374290109703290}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &3329869086651228314
 GameObject:
@@ -4061,6 +4071,8 @@ MonoBehaviour:
   - {fileID: 6847008590387954547}
   - {fileID: 3974255288138891131}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 4479619371338620446}
   IsUnlocked: 0
 --- !u!1 &3547167410943819288
 GameObject:
@@ -4294,10 +4306,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 0000000000000000
+  _unlockCost: 0200000000000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 1064408369962736004}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &3682468503733223179
 GameObject:
@@ -5081,11 +5095,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: 0000000000000000
+  _unlockCost: 0900000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   - {fileID: 1406905609058814246}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 1483551099776111147}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &4370154580573775935
 GameObject:
@@ -5395,11 +5411,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 0000000000000000
+  _unlockCost: 0700000000000000
   _requiredMenuOptions:
   - {fileID: 721112026612188127}
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 8857595542323636270}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &4707312020220043728
 GameObject:
@@ -5861,6 +5879,8 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 3222144913653736862}
+  _gutsCostAmount: {fileID: 1263831257175178403}
   IsUnlocked: 0
 --- !u!1 &5181437692548236757
 GameObject:
@@ -6017,6 +6037,8 @@ MonoBehaviour:
   _unlockCost: 0000000000000000
   _requiredMenuOptions: []
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 1249548552441930873}
+  _gutsCostAmount: {fileID: 1076806932273812309}
   IsUnlocked: 0
 --- !u!1 &5301806504140565154
 GameObject:
@@ -6944,11 +6966,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 7
-  _unlockCost: 0000000000000000
+  _unlockCost: 0000000008000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 4561735028404016684}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 2789421823631627518}
   IsUnlocked: 0
 --- !u!1 &6391287269496498241
 GameObject:
@@ -7100,10 +7124,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: 0000000000000000
+  _unlockCost: 0800000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 6417565660635443609}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &6452532171951155411
 GameObject:
@@ -8109,10 +8135,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 4
-  _unlockCost: 0000000000000000
+  _unlockCost: 0a00000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 784372214458786826}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &7186123589208988180
 GameObject:
@@ -8264,11 +8292,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 0000000000000000
+  _unlockCost: 0600000000000000
   _requiredMenuOptions:
   - {fileID: 6066923394180860478}
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 3330608268578053825}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &7208873424245315436
 GameObject:
@@ -8648,11 +8678,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000000000000
+  _unlockCost: 0000000006000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 1309629176239406103}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 587680268705859415}
   IsUnlocked: 0
 --- !u!1 &7485855470102285426
 GameObject:
@@ -8804,10 +8836,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 0000000000000000
+  _unlockCost: 0500000000000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 8007020072264840863}
+  _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &7578893191405957667
 GameObject:
@@ -8963,6 +8997,8 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 4425821460037028550}
   IsUnlocked: 0
 --- !u!1 &7670011387772340846
 GameObject:
@@ -9120,6 +9156,8 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 9159153940069944594}
+  _gutsCostAmount: {fileID: 1443935681057303734}
   IsUnlocked: 0
 --- !u!1 &7700050030312471896
 GameObject:
@@ -10218,11 +10256,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000000000000
+  _unlockCost: 0000000005000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   - {fileID: 5579858359199604220}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 5567203447830924615}
   IsUnlocked: 0
 --- !u!1 &8367029715970187977
 GameObject:
@@ -10691,6 +10731,8 @@ MonoBehaviour:
   - {fileID: 1785103266821876919}
   - {fileID: 6990119876308342282}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 2389899967847754879}
   IsUnlocked: 0
 --- !u!1 &8732722651034243567
 GameObject:
@@ -11084,10 +11126,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 8
-  _unlockCost: 0000000000000000
+  _unlockCost: 0000000009000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
+  _metalCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 55337822068472623}
   IsUnlocked: 0
 --- !u!1 &9050256171604796875
 GameObject:

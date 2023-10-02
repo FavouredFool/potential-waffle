@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] ResourceManager _resourceManager;
     [SerializeField] GameObject _laserBlueprint; 
     [SerializeField] float _thrusterForce = 1;
-    [SerializeField] float _fireRatePerSecond = 1;
+    [SerializeField] float _fireRatePerSecond = 2;
     [SerializeField] ParticleSystem _particles;
     [SerializeField] Transform _leftLaserSpawn;
     [SerializeField] Transform _rightLaserSpawn;
@@ -90,5 +91,10 @@ public class PlayerMovement : MonoBehaviour
             _resourceManager.AddResource(resource.GetResourceType());
         }
 
+    }
+
+    public void UpgradeFireRate()
+    {
+        _fireRatePerSecond *= 2;
     }
 }
