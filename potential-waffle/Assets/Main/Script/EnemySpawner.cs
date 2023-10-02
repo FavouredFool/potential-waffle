@@ -9,12 +9,20 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float _reachMaxTime;
     [SerializeField] float _healthStart;
     [SerializeField] float _healthIncreaseModifier;
-    [SerializeField] float _timeStart;
-    [SerializeField] float _timeDecreaseModifier;
+    [SerializeField] float _enemiesPerSecondStart;
+    [SerializeField] float _enemiesPerSecondIncreaseModifier;
     
     float _timeLastWave = float.NegativeInfinity;
+
+    float _enemiesPerSecond;
     float _startTime = -1;
     int _slowMultiplicator = 1;
+
+
+    void Start()
+    {
+        _enemiesPerSecond = _enemiesPerSecondStart;
+    }
 
     void Update()
     {
@@ -25,7 +33,9 @@ public class EnemySpawner : MonoBehaviour
 
         float t = (Time.time - _startTime) / _reachMaxTime;
 
-        if (Time.time - _timeLastWave > Mathf.Max(t * -_timeDecreaseModifier + _timeStart, 0.05f))
+        _enemiesPerSecond = t * _enemiesPerSecondIncreaseModifier + _enemiesPerSecondStart;
+
+        if (Time.time - _timeLastWave > 1 / _enemiesPerSecond)
         {
             Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _spawnRingRadius;
 
