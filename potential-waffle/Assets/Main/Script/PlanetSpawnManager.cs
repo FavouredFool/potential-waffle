@@ -17,10 +17,12 @@ public class PlanetSpawnManager : MonoBehaviour
 
     
     AnimationCurve[] _planetCurves;
+    ShipMovement _ship;
 
 
     void Start()
     {
+        _ship = GameObject.FindGameObjectWithTag("Ship").GetComponent<ShipMovement>();
         _planetCurves = new[] {_planet1Curve, _planet2Curve, _planet3Curve};
 
         for (int j = 0; j < _planetAmounts.Length; j++)
@@ -52,6 +54,11 @@ public class PlanetSpawnManager : MonoBehaviour
                             breakout = false;
                             break;
                         }
+                    }
+
+                    if ((planetPosition - (Vector2)_ship.transform.position).magnitude < 0.8f)
+                    {
+                        breakout = false;
                     }
 
                     if (breakout)
