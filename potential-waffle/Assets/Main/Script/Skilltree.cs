@@ -13,6 +13,7 @@ public class Skilltree : MonoBehaviour
     [SerializeField] PlayerMovement _playerMovement;
     [SerializeField] ShipMovement _ship;
     [SerializeField] EnemySpawner _spawner;
+    [SerializeField] ControlManager _controlManager;
 
     public enum SkillEffect {ROPE, SHIPGUN, SHIPGUNSPEED, SHIPHEALTH, SHIPSPEED, PISTOL, SPEED, SLOW, RANGE}
     public ResourceManager ResourceManager;
@@ -74,6 +75,7 @@ public class Skilltree : MonoBehaviour
         _cameraMovement.DecreaseZoom();
         _gun.IncreaseSearchDistance();
         _circleCollider.IncreaseBorderRadius();
+        _controlManager.MoveLineUp();
     }
 
     public void ShipGunEffect()

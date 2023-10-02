@@ -15,6 +15,7 @@ public class ControlManager : MonoBehaviour
     [SerializeField] EnemySpawner _spawner;
     [SerializeField] Text _timer;
     [SerializeField] Button _menuButton;
+    [SerializeField] RectTransform _dashedLine;
 
 
     GameObject _ship;
@@ -60,6 +61,11 @@ public class ControlManager : MonoBehaviour
         _hud.SetActive(true);
         _startScreen.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void MoveLineUp()
+    {
+        _dashedLine.anchoredPosition += new Vector2(0, 170);
     }
 
     public void ToggleSkillTree()
