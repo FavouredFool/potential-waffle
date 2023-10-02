@@ -1343,9 +1343,9 @@ MonoBehaviour:
   _spawnRingRadius: 8
   _reachMaxTime: 400
   _healthStart: 6
-  _healthIncreaseModifier: 110
+  _healthIncreaseModifier: 130
   _enemiesPerSecondStart: 0.15
-  _enemiesPerSecondIncreaseModifier: 0.65
+  _enemiesPerSecondIncreaseModifier: 0.6
 --- !u!4 &964346446
 Transform:
   m_ObjectHideFlags: 0
