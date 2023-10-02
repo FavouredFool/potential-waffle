@@ -110,6 +110,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void UpgradeSpeed()
     {
-        _thrusterForce *= 2;
+        _thrusterForce *= 1.75f;
     }
 }

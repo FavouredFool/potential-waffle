@@ -35,8 +35,8 @@ public class PlanetSpawnManager : MonoBehaviour
                 float percent = Random.Range(0f, 1f);
                 int nr;
 
-                if (percent < 15) nr = 2;
-                else if (percent < 50) nr = 1;
+                if (percent < 0.15f) nr = 2;
+                else if (percent < 0.5f) nr = 1;
                 else nr = 0;
 
                 SpawnPlanet(nr);

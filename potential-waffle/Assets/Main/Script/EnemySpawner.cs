@@ -6,9 +6,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] Enemy _enemyBlueprint;
     [SerializeField] float _spawnRingRadius = 8;
-
     [SerializeField] float _reachMaxTime;
-
     [SerializeField] float _healthStart;
     [SerializeField] float _healthIncreaseModifier;
     [SerializeField] float _timeStart;

@@ -173,7 +173,7 @@ MonoBehaviour:
   _minResource: 1
   _maxResource: 2
   _remainingElementBlueprint: {fileID: 2560678486844360142, guid: 1f006981222a04943b69cf4840faf54e, type: 3}
-  _ResourceBlueprint: {fileID: 5755942492486178987, guid: 1f355124cbacee24db506b070e896ea6, type: 3}
+  _ResourceBlueprint: {fileID: 118130758332923319, guid: 1f355124cbacee24db506b070e896ea6, type: 3}
   _healthbarDisc: {fileID: 2232631249957505255}
   _healthbarGradient:
     serializedVersion: 2
