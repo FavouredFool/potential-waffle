@@ -11,7 +11,6 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float _healthIncreaseModifier;
     [SerializeField] float _enemiesPerSecondStart;
     [SerializeField] float _enemiesPerSecondIncreaseModifier;
-    [SerializeField] AnimationCurve _enemySpawnCurve;
     
     float _timeLastWave = float.NegativeInfinity;
 
@@ -34,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
 
         float t = (Time.time - _startTime) / _reachMaxTime;
 
-        _enemiesPerSecond = _enemySpawnCurve.Evaluate(t) * _enemiesPerSecondIncreaseModifier + _enemiesPerSecondStart;
+        _enemiesPerSecond = t * _enemiesPerSecondIncreaseModifier + _enemiesPerSecondStart;
 
         if (Time.time - _timeLastWave > 1 / _enemiesPerSecond)
         {

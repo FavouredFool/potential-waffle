@@ -61,10 +61,18 @@ public class PlanetSpawnManager : MonoBehaviour
 
             bool breakout = true;
 
-            if ((planetPosition - (Vector2)_ship.transform.position).magnitude < 6f)
+            if (_ship == null)
             {
-                breakout = false;
+                breakout = true;
             }
+            else
+            {
+                if ((planetPosition - (Vector2)_ship.transform.position).magnitude < 6f)
+                {
+                    breakout = false;
+                }
+            }
+            
 
             if (breakout)
             {
