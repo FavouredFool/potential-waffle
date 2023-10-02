@@ -51,8 +51,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _type: 1
-  _magnetRadius: 0.5
-  _magnetForce: 1000
+  _magnetRadius: 1
+  _magnetForce: 2500
 --- !u!50 &1548260367364395050
 Rigidbody2D:
   serializedVersion: 4

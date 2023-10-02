@@ -57,7 +57,7 @@ public class PlanetSpawnManager : MonoBehaviour
         
             Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _orbitRadius;
             float weightedRandomNegativePositiveOne = _planetCurves[type].Evaluate(Random.Range(-1f, 1f));
-            planetPosition = randomOnOrbit + randomOnOrbit.normalized * _planetOffsets * weightedRandomNegativePositiveOne;
+            planetPosition = randomOnOrbit + randomOnOrbit.normalized * _planetOffsets * weightedRandomNegativePositiveOne * 0.65f;
 
             bool breakout = true;
 
