@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using static ResourceManager;
 using Shapes;
+using UnityEngine.UI;
 
 public class Hittable : MonoBehaviour
 {
@@ -20,15 +21,22 @@ public class Hittable : MonoBehaviour
     [SerializeField] Heal _HealBlueprint;
     [SerializeField] float _healOrbSpawnChance;
 
+
     int _currentHealth;
 
     Tween _healthBarFadeOutTween;
     Tween _colorBlinkTween;
     float _discAlpha = 0;
     Rigidbody2D _rigidBody;
+    ControlManager _controlManager;
 
     void Start()
     {
+        if (_resourceType == ResourceType.GUTS)
+        {
+            _controlManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlManager>();
+        }
+        
         _currentHealth = _maxHealth;
         _rigidBody = GetComponent<Rigidbody2D>();
         _spriteRenderer.color = Color.white;
@@ -53,6 +61,11 @@ public class Hittable : MonoBehaviour
             if (Random.Range(0f, 1f) <= _healOrbSpawnChance)
             {
                 Instantiate(_HealBlueprint, transform.position, transform.rotation);
+            }
+
+            if (_resourceType == ResourceType.GUTS)
+            {
+                _controlManager.IncreaseAliensKilled();
             }
 
             _healthBarFadeOutTween.Kill();

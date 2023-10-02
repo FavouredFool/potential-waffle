@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 using UnityEngine.UI;
 using System;
+using TMPro;
 
 public class ControlManager : MonoBehaviour
 {
@@ -16,10 +17,11 @@ public class ControlManager : MonoBehaviour
     [SerializeField] Text _timer;
     [SerializeField] Button _menuButton;
     [SerializeField] RectTransform _dashedLine;
-
+    [SerializeField] TMP_Text _aliensKilledText;
 
     GameObject _ship;
     float _startTime = 0;
+    int _aliensKilled = 0;
     TimeSpan _timePlaying;
 
     void Start()
@@ -33,6 +35,8 @@ public class ControlManager : MonoBehaviour
     
     void Update()
     {
+        _aliensKilledText.text = "Aliens Killed:\n" + _aliensKilled.ToString();
+
         if (_ship == null)
         {
             _hud.SetActive(false);
@@ -83,5 +87,10 @@ public class ControlManager : MonoBehaviour
             _menuButton.gameObject.SetActive(true);
             Time.timeScale = 1;
         }
+    }
+
+    public void IncreaseAliensKilled()
+    {
+        _aliensKilled++;
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Ship
   - Planet
+  - Manager
   layers:
   - Default
   - TransparentFX
