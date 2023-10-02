@@ -91,4 +91,9 @@ public class Gun : MonoBehaviour
     {
         _damageMultiplier*=2;
     }
+
+    public void UpgradeFireRate()
+    {
+        _fireRatePerSecond*=2;
+    }
 }

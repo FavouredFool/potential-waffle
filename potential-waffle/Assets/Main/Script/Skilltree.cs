@@ -73,7 +73,7 @@ public class Skilltree : MonoBehaviour
 
     public void ShipGunSpeedEffect()
     {
-
+        _gun.UpgradeFireRate();
     }
 
     public void ShipHealthEffect()
