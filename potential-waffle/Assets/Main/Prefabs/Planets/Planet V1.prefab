@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _resourceType: 0
-  _maxHealth: 8
+  _maxHealth: 6
   _minResource: 1
   _maxResource: 2
   _remainingElementBlueprint: {fileID: 2560678486844360142, guid: 9af0e30a7de14564982e4c01ab00600e, type: 3}
