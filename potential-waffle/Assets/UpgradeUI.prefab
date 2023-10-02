@@ -3721,7 +3721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 2d00000000000000
+  _unlockCost: 3200000000000000
   _requiredMenuOptions:
   - {fileID: 1700351900666097755}
   - {fileID: 6847008590387954547}
@@ -5064,7 +5064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: e100000000000000
+  _unlockCost: 8c00000000000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 1406905609058814246}
@@ -5844,7 +5844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 0
-  _unlockCost: 2c01000019000000
+  _unlockCost: 2c0100001e000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
@@ -6921,7 +6921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 8
-  _unlockCost: 0000000010000000
+  _unlockCost: 0000000012000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 4561735028404016684}
@@ -7079,7 +7079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: 3c00000000000000
+  _unlockCost: 2d00000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -8171,7 +8171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 3200000000000000
+  _unlockCost: 3700000000000000
   _requiredMenuOptions:
   - {fileID: 6066923394180860478}
   - {fileID: 6847008590387954547}
@@ -8557,7 +8557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 000000000b000000
+  _unlockCost: 000000000c000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 1309629176239406103}
@@ -10602,7 +10602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 5
-  _unlockCost: 0000000010000000
+  _unlockCost: 0000000014000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 6990119876308342282}
