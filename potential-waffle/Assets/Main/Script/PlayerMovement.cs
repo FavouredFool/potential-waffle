@@ -21,9 +21,13 @@ public class PlayerMovement : MonoBehaviour
     Vector2 _velocity = Vector2.zero;
 
     ShipMovement _ship;
+    AudioManager _audio;
+
+    float _timeSinceThruster = float.NegativeInfinity;
 
     void Start()
     {
+        _audio = FindObjectOfType<AudioManager>();
         _rigidBody = GetComponent<Rigidbody2D>();
         _ship = GameObject.FindGameObjectWithTag("Ship").GetComponent<ShipMovement>();
     }
@@ -41,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (_ship == null)
         {
+            _audio.ChangeVolume("Thruster", 0);
             return;
         }
         RotatePlayer();
@@ -53,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Time.time - _timeLastShot > 1 / _fireRatePerSecond)
             {
+                _audio.Play("LaserSmall");
+
                 Laser laser1 = Instantiate(_laserBlueprint, _leftLaserSpawn.position, _leftLaserSpawn.rotation);
                 Laser laser2 = Instantiate(_laserBlueprint, _rightLaserSpawn.position, _rightLaserSpawn.rotation);
                 
@@ -68,8 +75,14 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetMouseButton(1))
         {
+            _audio.ChangeVolume("Thruster", 1);
+
             _rigidBody.AddForce(transform.up * _thrusterForce);
             _particles.Play();
+        }
+        else
+        {
+            _audio.ChangeVolume("Thruster", 0);
         }
     }
 

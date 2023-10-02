@@ -22,6 +22,13 @@ public class Gun : MonoBehaviour
 
     float _closestDistance = float.PositiveInfinity;
 
+    AudioManager _audio;
+
+    void Start()
+    {
+        _audio = FindObjectOfType<AudioManager>();
+    }
+
     void Update()
     {
         if (_activeEnemy != null)
@@ -76,6 +83,7 @@ public class Gun : MonoBehaviour
         // If enemies are targeted
         if (Time.time - _timeLastShot > 1 / _fireRatePerSecond)
         {
+            _audio.Play("LaserBig");
             Laser laser = Instantiate(_laserBlueprint, _shootingPointTransform.position, _shootingPointTransform.rotation);
             laser.SetDamage(_damageMultiplier);
             _timeLastShot = Time.time;

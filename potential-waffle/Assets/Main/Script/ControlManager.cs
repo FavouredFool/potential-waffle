@@ -24,13 +24,19 @@ public class ControlManager : MonoBehaviour
     int _aliensKilled = 0;
     TimeSpan _timePlaying;
 
+    AudioManager audio;
+
     void Start()
     {
+        audio = FindObjectOfType<AudioManager>();
         _hud.SetActive(false);
         _startScreen.SetActive(true);
         _skillTree.SetActive(false);
         Time.timeScale = 0;
         _ship = GameObject.FindGameObjectWithTag("Ship");
+
+        audio.ChangeVolume("BackgroundMusic", 0.15f);
+        
     }
     
     void Update()
@@ -39,6 +45,7 @@ public class ControlManager : MonoBehaviour
 
         if (_ship == null)
         {
+            audio.ChangeVolume("BackgroundMusic", 0.15f);
             _hud.SetActive(false);
             _endScreen.SetActive(true);
         }
@@ -61,6 +68,7 @@ public class ControlManager : MonoBehaviour
 
     public void StartGame()
     {
+        audio.ChangeVolume("BackgroundMusic", 0.4f);
         _startTime = Time.time;
         _hud.SetActive(true);
         _startScreen.SetActive(false);
