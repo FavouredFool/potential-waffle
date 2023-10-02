@@ -85,4 +85,10 @@ public class Hittable : MonoBehaviour
     {
         return _resourceType;
     }
+
+    public void SetHP(int HP)
+    {
+        _maxHealth = HP;
+        _currentHealth = HP;
+    }
 }

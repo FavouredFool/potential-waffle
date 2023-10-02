@@ -5,7 +5,7 @@ using System.Reflection.Emit;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float _speed = 5;
+    [SerializeField] float _averageSpeed = 5;
     [SerializeField] float _rotateSpeed = 0.5f;
     [SerializeField] float _slowAmount = 5;
     [SerializeField] float _slowDuration = 1;
@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
 
     Tween _slowTween;
 
+    float _speed;
     float _currentSpeed;
     float _slowMultiplicator = 1;
     
@@ -22,6 +23,8 @@ public class Enemy : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _ship = GameObject.FindGameObjectWithTag("Ship")?.transform;
+        
+        _speed = _averageSpeed + Random.Range(-_averageSpeed/4, _averageSpeed/4);
         _currentSpeed = _speed;
     }
 
@@ -77,5 +80,4 @@ public class Enemy : MonoBehaviour
     {
         _slowMultiplicator = multiplicator;
     }
-
 }

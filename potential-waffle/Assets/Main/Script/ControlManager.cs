@@ -10,6 +10,7 @@ public class ControlManager : MonoBehaviour
     [SerializeField] GameObject _endScreen;
     [SerializeField] GameObject _hud;
     [SerializeField] GameObject _skillTree;
+    [SerializeField] EnemySpawner _spawner;
 
 
     GameObject _ship;
