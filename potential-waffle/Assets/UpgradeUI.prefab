@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: af00000000000000
+  _unlockCost: 9600000000000000
   _requiredMenuOptions:
   - {fileID: 8062194187230851551}
   - {fileID: 1785103266821876919}
@@ -991,7 +991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000002000000
+  _unlockCost: 0000000004000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
@@ -2768,7 +2768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 0
-  _unlockCost: 640000000c000000
+  _unlockCost: 4b00000010000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -2925,7 +2925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 8
-  _unlockCost: 0000000007000000
+  _unlockCost: 000000000a000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -3721,7 +3721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 1
-  _unlockCost: 3700000000000000
+  _unlockCost: 2d00000000000000
   _requiredMenuOptions:
   - {fileID: 1700351900666097755}
   - {fileID: 6847008590387954547}
@@ -4035,7 +4035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 5
-  _unlockCost: 0000000006000000
+  _unlockCost: 0000000009000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   - {fileID: 3974255288138891131}
@@ -5064,7 +5064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: fa00000000000000
+  _unlockCost: e100000000000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 1406905609058814246}
@@ -5380,7 +5380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: c800000000000000
+  _unlockCost: af00000000000000
   _requiredMenuOptions:
   - {fileID: 721112026612188127}
   - {fileID: 1785103266821876919}
@@ -5844,7 +5844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 0
-  _unlockCost: 9001000014000000
+  _unlockCost: 2c01000019000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
@@ -6469,7 +6469,7 @@ RectTransform:
   - {fileID: 5479459677344190338}
   - {fileID: 5726342252301996314}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6921,7 +6921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 8
-  _unlockCost: 000000000c000000
+  _unlockCost: 0000000010000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 4561735028404016684}
@@ -7079,7 +7079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 3
-  _unlockCost: 4600000000000000
+  _unlockCost: 3c00000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -8014,7 +8014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 4
-  _unlockCost: 4100000000000000
+  _unlockCost: 3700000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -8171,7 +8171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 2
-  _unlockCost: 3c00000000000000
+  _unlockCost: 3200000000000000
   _requiredMenuOptions:
   - {fileID: 6066923394180860478}
   - {fileID: 6847008590387954547}
@@ -8557,7 +8557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000008000000
+  _unlockCost: 000000000b000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 1309629176239406103}
@@ -8872,7 +8872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 5
-  _unlockCost: 0000000004000000
+  _unlockCost: 0000000006000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
@@ -9031,7 +9031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 0
-  _unlockCost: 1900000006000000
+  _unlockCost: 1900000008000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
@@ -10132,7 +10132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000003000000
+  _unlockCost: 0000000006000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   - {fileID: 5579858359199604220}
@@ -10602,7 +10602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 5
-  _unlockCost: 000000000c000000
+  _unlockCost: 0000000010000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 6990119876308342282}
@@ -11002,7 +11002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 7
-  _unlockCost: 0000000006000000
+  _unlockCost: 000000000a000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
