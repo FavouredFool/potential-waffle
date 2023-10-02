@@ -91,4 +91,9 @@ public class ShipMovement : MonoBehaviour
         _currentHealth += _maxHealth / 2;
     }
 
+    public void UpgradeShipSpeed()
+    {
+        _moveSpeed *= 2;
+    }
+
 }

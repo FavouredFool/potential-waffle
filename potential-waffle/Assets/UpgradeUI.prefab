@@ -789,9 +789,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SLOW I:
+  m_Text: 'RANGE I:
 
-    Increases the pistol slow to aliens.'
+    Increases range'
 --- !u!1 &1138482715697212086
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000004000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
@@ -2510,9 +2510,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'RANGE I:
+  m_Text: 'SLOW I:
 
-    Increases the pistol range.'
+    Increases slow.'
 --- !u!1 &2436326357190816724
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5726342252301996314
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2820,7 +2820,7 @@ GameObject:
   - component: {fileID: 1194107052006058098}
   - component: {fileID: 4561735028404016684}
   m_Layer: 5
-  m_Name: Upgrade Slow I
+  m_Name: Upgrade Range I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,8 +2955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skillEffect: 7
-  _unlockCost: 0000000007000000
+  _skillEffect: 8
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -6830,7 +6830,7 @@ GameObject:
   - component: {fileID: 4687596203502789773}
   - component: {fileID: 1652729873623297219}
   m_Layer: 5
-  m_Name: Upgrade Slow II
+  m_Name: Upgrade Range II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6965,8 +6965,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skillEffect: 7
-  _unlockCost: 0000000008000000
+  _skillEffect: 8
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 4561735028404016684}
@@ -8678,7 +8678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000006000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 1309629176239406103}
@@ -10256,7 +10256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillEffect: 6
-  _unlockCost: 0000000005000000
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   - {fileID: 5579858359199604220}
@@ -10990,7 +10990,7 @@ GameObject:
   - component: {fileID: 7044822664937979574}
   - component: {fileID: 699497697093869919}
   m_Layer: 5
-  m_Name: Upgrade Range I
+  m_Name: Upgrade Slow I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11125,8 +11125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skillEffect: 8
-  _unlockCost: 0000000009000000
+  _skillEffect: 7
+  _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
@@ -11212,9 +11212,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SLOW II:
+  m_Text: 'RANGE II:
 
-    Increases the pistol slow to aliens.'
+    Increases range'
 --- !u!1 &9175712978593650753
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] ResourceManager _resourceManager;
-    [SerializeField] GameObject _laserBlueprint; 
+    [SerializeField] Laser _laserBlueprint; 
     [SerializeField] float _thrusterForce = 1;
     [SerializeField] float _fireRatePerSecond = 2;
     [SerializeField] ParticleSystem _particles;
@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     float _timeLastShot = float.NegativeInfinity;
+    int _timeTillKillMultiplicator = 1;
 
     Rigidbody2D _rigidBody;
     Vector2 _velocity = Vector2.zero;
@@ -52,8 +53,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Time.time - _timeLastShot > 1 / _fireRatePerSecond)
             {
-                Instantiate(_laserBlueprint, _leftLaserSpawn.position, _leftLaserSpawn.rotation);
-                Instantiate(_laserBlueprint, _rightLaserSpawn.position, _rightLaserSpawn.rotation);
+                Laser laser1 = Instantiate(_laserBlueprint, _leftLaserSpawn.position, _leftLaserSpawn.rotation);
+                Laser laser2 = Instantiate(_laserBlueprint, _rightLaserSpawn.position, _rightLaserSpawn.rotation);
+                
+                laser1.SetTimeTillKill(_timeTillKillMultiplicator);
+                laser2.SetTimeTillKill(_timeTillKillMultiplicator);
+                
                 _timeLastShot = Time.time;
             }
         }
@@ -96,5 +101,10 @@ public class PlayerMovement : MonoBehaviour
     public void UpgradeFireRate()
     {
         _fireRatePerSecond *= 2;
+    }
+
+    public void UpgradeTimeTillKillMultiplicator()
+    {
+        _timeTillKillMultiplicator *= 2;
     }
 }

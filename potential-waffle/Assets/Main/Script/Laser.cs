@@ -49,4 +49,9 @@ public class Laser : MonoBehaviour
     {
         _damage *= multiplier;
     }
+
+    public void SetTimeTillKill(int multiplier)
+    {
+        _timeTillKill *= multiplier;
+    }
 }

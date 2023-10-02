@@ -69,6 +69,7 @@ public class Skilltree : MonoBehaviour
 
     public void ShipGunEffect()
     {
+        // should also increase thruster force
         _gun.UpgradeDamageMultiplier();
     }
 
@@ -84,14 +85,13 @@ public class Skilltree : MonoBehaviour
 
     public void ShipSpeedEffect()
     {
-
+        _ship.UpgradeShipSpeed();
     }
 
     public void PistolEffect()
     {
         // Multiply Attack speed by 2
         _playerMovement.UpgradeFireRate();
-
     }
 
     public void SpeedEffect()
@@ -106,7 +106,7 @@ public class Skilltree : MonoBehaviour
 
     public void RangeEffect()
     {
-
+        _playerMovement.UpgradeTimeTillKillMultiplicator();
     }
 
     public void SetImages()
