@@ -12,6 +12,7 @@ public class Laser : MonoBehaviour
     [SerializeField] LaserType _laserType;
     [SerializeField] float _shootingForce = 3f;
     [SerializeField] float _timeTillKill = 0.35f;
+    [SerializeField] float _slowStrength = 1;
 
     Rigidbody2D _rigidBody;
 
@@ -34,6 +35,11 @@ public class Laser : MonoBehaviour
 
         if (hittable != null)
         {
+            if (hittable.GetResourceType() == ResourceType.GUTS)
+            {
+                Enemy enemy = hittable.GetComponent<Enemy>();
+                enemy.SlowEnemy();
+            }
             hittable.ReduceHP(_damage);
         }
 
