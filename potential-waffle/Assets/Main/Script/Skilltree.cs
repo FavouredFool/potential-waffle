@@ -19,6 +19,8 @@ public class Skilltree : MonoBehaviour
     public Sprite[] TextBGs;
     public MenuOption[] MenuOptions;
 
+    bool _firstSkillStarted = false;
+
     public void Start()
     {
         SetImages();
@@ -26,6 +28,12 @@ public class Skilltree : MonoBehaviour
 
     public void DoEffect(SkillEffect skillEffect)
     {
+        if (!_firstSkillStarted)
+        {
+            _spawner.SetStartTime();
+            _firstSkillStarted = true;
+        }
+        
         SetImages();
 
         switch(skillEffect)
