@@ -30,8 +30,11 @@ public class Hittable : MonoBehaviour
     Rigidbody2D _rigidBody;
     ControlManager _controlManager;
 
+    AudioManager _audio;
+
     void Start()
     {
+        _audio = FindObjectOfType<AudioManager>();
         if (_resourceType == ResourceType.GUTS)
         {
             _controlManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlManager>();
@@ -48,6 +51,15 @@ public class Hittable : MonoBehaviour
         {
             // Kill, spawn planetbits and resources
             
+            if (_resourceType == ResourceType.METAL)
+            {
+                _audio.Play("PlanetDestroyed");
+            }
+            else
+            {
+                _audio.Play("AlienDestroyed");
+            }
+
             for (int i = 0; i < Random.Range(3, 6); i++) 
             {
                 Instantiate(_remainingElementBlueprint, transform.position, transform.rotation);
@@ -85,7 +97,16 @@ public class Hittable : MonoBehaviour
 
     public void ReduceHP(int damageAmount)
     {
-        // Flash white
+
+        // Audio
+        if (_resourceType == ResourceType.METAL)
+        {
+            _audio.Play("ImpactPlanet");
+        }
+        else
+        {
+            _audio.Play("ImpactAlien");
+        }
 
         _currentHealth -= damageAmount;
 

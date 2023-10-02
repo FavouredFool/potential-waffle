@@ -63,12 +63,14 @@ public class ControlManager : MonoBehaviour
 
     public void LoadGame()
     {
+        audio.Play("UIButton");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void StartGame()
     {
-        audio.ChangeVolume("BackgroundMusic", 0.4f);
+        audio.ChangeVolume("BackgroundMusic", 0.5f);
+        audio.Play("UIButton");
         _startTime = Time.time;
         _hud.SetActive(true);
         _startScreen.SetActive(false);
@@ -82,6 +84,8 @@ public class ControlManager : MonoBehaviour
 
     public void ToggleSkillTree()
     {
+        audio.Play("UIButton");
+        audio.ChangeVolume("Thruster", 0);
         _skillTree.SetActive(!_skillTree.activeSelf);
 
 

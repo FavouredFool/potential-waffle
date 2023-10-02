@@ -14,6 +14,13 @@ public class ResourceManager : MonoBehaviour
     public int MetalAmount {get; set;} = 0;
     public int GutsAmount {get; set;} = 0;
 
+    public AudioManager _audio;
+
+    void Start()
+    {
+        _audio = FindObjectOfType<AudioManager>();
+    }
+
     void Update()
     {
         UpdateHUD();
@@ -21,6 +28,8 @@ public class ResourceManager : MonoBehaviour
 
     public void AddResource(ResourceType type)
     {
+        _audio.Play("ItemPickup");
+
         if (type == ResourceType.METAL)
         {
             MetalAmount += 1;

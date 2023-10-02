@@ -22,13 +22,17 @@ public class Skilltree : MonoBehaviour
 
     bool _firstSkillStarted = false;
 
+    AudioManager _audio;
+
     public void Start()
     {
+        _audio = FindObjectOfType<AudioManager>();
         SetImages();
     }
 
     public void DoEffect(SkillEffect skillEffect)
     {
+        _audio.Play("UIButton");
         if (!_firstSkillStarted)
         {
             _spawner.SetStartTime();

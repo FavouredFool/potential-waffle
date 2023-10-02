@@ -20,9 +20,11 @@ public class ShipMovement : MonoBehaviour
     Tween _healthBarFadeOutTween;
     Tween _colorBlinkTween;
     float _discAlpha = 0.1f;
+    AudioManager _audio;
 
     void Start()
     {
+        _audio = FindObjectOfType<AudioManager>();
         _rigidbody = GetComponent<Rigidbody2D>();
         _currentHealth = _maxHealth;
     }
@@ -44,6 +46,7 @@ public class ShipMovement : MonoBehaviour
             // Game over!#
             // Does the station explode?
 
+            _audio.Play("ShipCrash");
             
             for (int i = 0; i < Random.Range(60, 70); i++) 
             {
@@ -68,6 +71,8 @@ public class ShipMovement : MonoBehaviour
     public void ReduceHP(int damageAmount)
     {
         // Flash white
+
+        _audio.Play("PlanetDestroyed");
 
         _currentHealth -= damageAmount;
 
