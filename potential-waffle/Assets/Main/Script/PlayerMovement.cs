@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
     void ShootLaser()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && Time.timeScale != 0)
         {
             if (Time.time - _timeLastShot > 1 / _fireRatePerSecond)
             {
@@ -106,5 +106,10 @@ public class PlayerMovement : MonoBehaviour
     public void UpgradeTimeTillKillMultiplicator()
     {
         _timeTillKillMultiplicator *= 2;
+    }
+
+    public void UpgradeSpeed()
+    {
+        _thrusterForce *= 2;
     }
 }

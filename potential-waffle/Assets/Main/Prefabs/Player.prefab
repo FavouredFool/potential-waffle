@@ -189,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _resourceManager: {fileID: 0}
   _laserBlueprint: {fileID: 2758215298406588838, guid: 14d7edd8e690677498965d4cb6f5c492, type: 3}
-  _thrusterForce: 3
+  _thrusterForce: 1
   _fireRatePerSecond: 2
   _particles: {fileID: 7524387581308007346}
   _leftLaserSpawn: {fileID: 6162769498247746123}

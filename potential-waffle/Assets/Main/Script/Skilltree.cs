@@ -96,7 +96,7 @@ public class Skilltree : MonoBehaviour
 
     public void SpeedEffect()
     {
-
+        _playerMovement.UpgradeSpeed();
     }
 
     public void SlowEffect()
