@@ -12,7 +12,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] float _healthIncreaseModifier;
     [SerializeField] float _enemiesPerSecondStart;
     [SerializeField] float _enemiesPerSecondIncreaseModifier;
-    [SerializeField] AnimationCurve _gradientScale;
+    [SerializeField] AnimationCurve _timeScale;
+    [SerializeField] AnimationCurve _hpScale;
 
     float _timeLastWave = float.NegativeInfinity;
 
@@ -35,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
 
         float t = (Time.time - _startTime) / _reachMaxTime;
 
-        _enemiesPerSecond = _gradientScale.Evaluate(t) * _enemiesPerSecondIncreaseModifier + _enemiesPerSecondStart;
+        _enemiesPerSecond = _timeScale.Evaluate(t);
 
         if (Time.time - _timeLastWave > 1 / _enemiesPerSecond)
         {
@@ -44,7 +45,7 @@ public class EnemySpawner : MonoBehaviour
             Enemy enemy = Instantiate(_enemyBlueprint, randomOnOrbit, Quaternion.identity);
             enemy.SetSlowMultiplicator(_slowMultiplicator);
 
-            int averageHP = (int)(_gradientScale.Evaluate(t) * _healthIncreaseModifier + _healthStart);
+            int averageHP = (int)_hpScale.Evaluate(t);
             enemy.GetComponent<Hittable>().SetHP(averageHP + (int)Random.Range(-averageHP/6f, averageHP/6f));
 
             _timeLastWave = Time.time;
