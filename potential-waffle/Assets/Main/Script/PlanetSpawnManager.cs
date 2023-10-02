@@ -10,18 +10,80 @@ public class PlanetSpawnManager : MonoBehaviour
     [SerializeField] AnimationCurve _planet1Curve;
     [SerializeField] AnimationCurve _planet2Curve;
     [SerializeField] AnimationCurve _planet3Curve;
-
     [SerializeField] float _planetOffsets = 2;
+    [SerializeField] float _timeImpulsesRespawn = 5;
 
     float _orbitRadius = 4.5f;
+    float _allPlanets;
 
+    float _timeLastRespawn = float.NegativeInfinity;
     
     AnimationCurve[] _planetCurves;
     ShipMovement _ship;
 
 
+    void Update()
+    {
+        // Every x seconds, count all planets, respawn if its less than _allPlanets
+
+        if (Time.time - _timeLastRespawn > _timeImpulsesRespawn)
+        {
+            int amount = GameObject.FindGameObjectsWithTag("Planet").Length;
+
+            for (int i = 0; i < _allPlanets - amount; i++)
+            {
+                float percent = Random.Range(0f, 1f);
+                int nr;
+
+                if (percent < 15) nr = 2;
+                else if (percent < 50) nr = 1;
+                else nr = 0;
+
+                SpawnPlanet(nr);
+            }
+
+            _timeLastRespawn = Time.time;
+        }
+    }
+
+    public void SpawnPlanet(int type)
+    {
+        Vector2 planetPosition = Vector2.zero;
+
+        int breakOutCounter = 0;
+        while(breakOutCounter < 10000) 
+        {
+            breakOutCounter++;
+        
+            Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _orbitRadius;
+            float weightedRandomNegativePositiveOne = _planetCurves[type].Evaluate(Random.Range(-1f, 1f));
+            planetPosition = randomOnOrbit + randomOnOrbit.normalized * _planetOffsets * weightedRandomNegativePositiveOne;
+
+            bool breakout = true;
+
+            if ((planetPosition - (Vector2)_ship.transform.position).magnitude < 6f)
+            {
+                breakout = false;
+            }
+
+            if (breakout)
+            {
+                break;
+            }
+        }
+
+        if (breakOutCounter >= 10000)
+        {
+            Debug.LogWarning("BROKEN OUT OF ENDLESS LOOP");
+        }
+
+        Instantiate(_planetBlueprints[type], planetPosition, Quaternion.Euler(0, 0, Random.Range(0, 360)));
+    }
+
     void Start()
     {
+        _allPlanets = _planetAmounts[0] + _planetAmounts[1] + _planetAmounts[2];
+
         _ship = GameObject.FindGameObjectWithTag("Ship").GetComponent<ShipMovement>();
         _planetCurves = new[] {_planet1Curve, _planet2Curve, _planet3Curve};
 
