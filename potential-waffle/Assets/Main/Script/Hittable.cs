@@ -40,7 +40,7 @@ public class Hittable : MonoBehaviour
         {
             // Kill, spawn planetbits and resources
             
-            for (int i = 0; i < Random.Range(5, 9); i++) 
+            for (int i = 0; i < Random.Range(3, 6); i++) 
             {
                 Instantiate(_remainingElementBlueprint, transform.position, transform.rotation);
             }
