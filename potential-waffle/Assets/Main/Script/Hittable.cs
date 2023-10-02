@@ -23,10 +23,12 @@ public class Hittable : MonoBehaviour
     Tween _healthBarFadeOutTween;
     Tween _colorBlinkTween;
     float _discAlpha = 0;
+    Rigidbody2D _rigidBody;
 
     void Start()
     {
         _currentHealth = _maxHealth;
+        _rigidBody = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -70,7 +72,7 @@ public class Hittable : MonoBehaviour
         {
             _healthBarFadeOutTween.Kill();
         }
-        _healthBarFadeOutTween = DOTween.To(x => _discAlpha = x, 0.2f, 0, 3).SetEase(Ease.InCubic);
+        _healthBarFadeOutTween = DOTween.To(x => _discAlpha = x, 0.25f, 0, 3).SetEase(Ease.InCubic);
 
         if (_colorBlinkTween != null)
         {

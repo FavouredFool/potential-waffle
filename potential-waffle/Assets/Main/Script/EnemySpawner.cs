@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject _enemyBlueprint;
+    [SerializeField] Enemy _enemyBlueprint;
     [SerializeField] float _spawnRingRadius = 8;
-
     [SerializeField] float _timeBetweenWaves = 12;
     
     float _timeLastWave = float.NegativeInfinity;
+    int _slowMultiplicator = 1;
 
     void Update()
     {
@@ -24,10 +24,16 @@ public class EnemySpawner : MonoBehaviour
             {
                 Vector2 randomOnOrbit = Random.insideUnitCircle.normalized * _spawnRingRadius;
 
-                Instantiate(_enemyBlueprint, randomOnOrbit, Quaternion.identity);
+                Enemy enemy = Instantiate(_enemyBlueprint, randomOnOrbit, Quaternion.identity);
+                enemy.SetSlowMultiplicator(_slowMultiplicator);
             }
 
             _timeLastWave = Time.time;
         }
+    }
+
+    public void UpdateSlow()
+    {
+        _slowMultiplicator*=4;
     }
 }

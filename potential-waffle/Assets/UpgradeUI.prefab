@@ -231,7 +231,7 @@ MonoBehaviour:
   - {fileID: 8062194187230851551}
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 2865505242171512325}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &362097742978229024
@@ -349,7 +349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.00006, y: -30}
+  m_AnchoredPosition: {x: 35.00006, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8470288913118237730
@@ -458,10 +458,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -469,9 +469,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ATTACK SPEED II:
+  m_Text: 'GUN SPEED II:
 
-    Increases the attack speed of the mothership.'
+    Increases the attack speed of the gun.'
 --- !u!1 &565186502116658563
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,10 +616,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -627,9 +627,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ATTACK SPEED I:
+  m_Text: 'GUN SPEED I:
 
-    Increases the attack speed of the mothership.'
+    Increases the attack speed of the gun.'
 --- !u!1 &989045902726667006
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -32}
+  m_AnchoredPosition: {x: -40, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6458343153456977601
@@ -778,7 +778,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -789,9 +789,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SLOW I:
+  m_Text: 'RANGE I:
 
-    Increases the laser slow to aliens.'
+    Increases range'
 --- !u!1 &1138482715697212086
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,7 +947,7 @@ MonoBehaviour:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 7812725804136661805}
   IsUnlocked: 0
 --- !u!1 &1161873977131941058
 GameObject:
@@ -984,7 +984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.999939, y: -32}
+  m_AnchoredPosition: {x: 9.999939, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3841265090714242680
@@ -1333,10 +1333,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1344,9 +1344,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'CANNON I:
+  m_Text: 'SHIP GUN I:
 
-    Increase the mothership damage to aliens.'
+    Increases the gun damage to aliens.'
 --- !u!1 &1439864416963835704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,7 +1415,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1426,9 +1426,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HEALTH I:
+  m_Text: 'SHIP HEALTH I:
 
-    Increases the maximum health of the mothership.'
+    Increases the ship health.'
 --- !u!1 &1454783473307532670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,7 +1464,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.999939, y: -30}
+  m_AnchoredPosition: {x: -14.999939, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7943176835647993035
@@ -1616,7 +1616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.999939, y: -30}
+  m_AnchoredPosition: {x: -14.999939, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &59147370679945193
@@ -1848,7 +1848,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.999939, y: -32}
+  m_AnchoredPosition: {x: 9.999939, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3611828706153759084
@@ -1928,7 +1928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.999939, y: -30}
+  m_AnchoredPosition: {x: -14.999939, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3588775123754824974
@@ -2037,10 +2037,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -2048,9 +2048,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'BOND II:
+  m_Text: 'ROPE II:
 
-    Upgrade lenght of bond and mother- ship attack range.'
+    Increases the lenght of the rope.'
 --- !u!1 &1825547064657060950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2499,7 +2499,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2510,9 +2510,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'LASER RANGE I:
+  m_Text: 'SLOW I:
 
-    Increases the range of the laser.'
+    Increases slow.'
 --- !u!1 &2436326357190816724
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5726342252301996314
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2550,7 +2550,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 70, y: -70}
+  m_AnchoredPosition: {x: 84.6713, y: -84.0264}
   m_SizeDelta: {x: 82.8481, y: 84.1716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7303709055204595272
@@ -2803,8 +2803,8 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 2879777233765229116}
+  _gutsCostAmount: {fileID: 7138949422273699358}
   IsUnlocked: 0
 --- !u!1 &2571503058282546453
 GameObject:
@@ -2820,7 +2820,7 @@ GameObject:
   - component: {fileID: 1194107052006058098}
   - component: {fileID: 4561735028404016684}
   m_Layer: 5
-  m_Name: Upgrade Slow I
+  m_Name: Upgrade Range I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,13 +2955,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skillEffect: 7
+  _skillEffect: 8
   _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 939918024234070364}
   IsUnlocked: 0
 --- !u!1 &2652039390712838578
 GameObject:
@@ -3031,7 +3031,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -3042,9 +3042,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'LASER III:
+  m_Text: 'Pistol III:
 
-    Increases the attack speed of the ship''s laser.'
+    Increases the player damage to planets.'
 --- !u!1 &2722313894829409726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3350,10 +3350,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -3361,9 +3361,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'BOND IV:
+  m_Text: 'ROPE IV:
 
-    Upgrade lenght of bond and mother- ship attack range.'
+    Increases the lenght of the rope.'
 --- !u!1 &2875151015575142419
 GameObject:
   m_ObjectHideFlags: 0
@@ -3432,7 +3432,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -3443,9 +3443,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'LASER I:
+  m_Text: 'PISTOL I:
 
-    Increases the attack speed of the ship''s laser.'
+    Increases the player damage to planets.'
 --- !u!1 &2886554144272020533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,7 +3481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -32}
+  m_AnchoredPosition: {x: 10, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6941175376600342617
@@ -3757,7 +3757,7 @@ MonoBehaviour:
   - {fileID: 1700351900666097755}
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 5667374290109703290}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &3329869086651228314
@@ -4072,7 +4072,7 @@ MonoBehaviour:
   - {fileID: 3974255288138891131}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 4479619371338620446}
   IsUnlocked: 0
 --- !u!1 &3547167410943819288
 GameObject:
@@ -4153,9 +4153,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'THRUSTER II:
+  m_Text: 'SPEED II:
 
-    Increases ship''s thruster strenght.'
+    Increases the player speed.'
 --- !u!1 &3588499988269852078
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,7 +4310,7 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 1064408369962736004}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &3682468503733223179
@@ -4381,10 +4381,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -4392,9 +4392,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'BOND III:
+  m_Text: 'ROPE III:
 
-    Upgrade lenght of bond and mother- ship attack range.'
+    Increases the lenght of the rope.'
 --- !u!1 &3720806795203797251
 GameObject:
   m_ObjectHideFlags: 0
@@ -4430,7 +4430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14.999939, y: -30}
+  m_AnchoredPosition: {x: -14.999939, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5744962074683619100
@@ -4710,9 +4710,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'THRUSTER III:
+  m_Text: 'SPEED III:
 
-    Increases ship''s thruster strenght.'
+    Increases the player speed.'
 --- !u!1 &4124696156254376238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5097,10 +5097,10 @@ MonoBehaviour:
   _skillEffect: 3
   _unlockCost: 0000000000000000
   _requiredMenuOptions:
-  - {fileID: 6847008590387954547}
+  - {fileID: 1785103266821876919}
   - {fileID: 1406905609058814246}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 1483551099776111147}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &4370154580573775935
@@ -5247,7 +5247,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -5258,9 +5258,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ATTACK SPEED III:
+  m_Text: 'GUN SPEED III:
 
-    Increases the attack speed of the mothership.'
+    Increases the attack speed of the gun.'
 --- !u!1 &4614852750070791291
 GameObject:
   m_ObjectHideFlags: 0
@@ -5416,7 +5416,7 @@ MonoBehaviour:
   - {fileID: 721112026612188127}
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 8857595542323636270}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &4707312020220043728
@@ -5879,8 +5879,8 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 3222144913653736862}
+  _gutsCostAmount: {fileID: 1263831257175178403}
   IsUnlocked: 0
 --- !u!1 &5181437692548236757
 GameObject:
@@ -6037,8 +6037,8 @@ MonoBehaviour:
   _unlockCost: 0000000000000000
   _requiredMenuOptions: []
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 1249548552441930873}
+  _gutsCostAmount: {fileID: 1076806932273812309}
   IsUnlocked: 0
 --- !u!1 &5301806504140565154
 GameObject:
@@ -6184,10 +6184,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -6195,9 +6195,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'CANNON III:
+  m_Text: 'SHIP GUN III:
 
-    Increase the mothership damage to aliens.'
+    Increases the gun damage to aliens.'
 --- !u!1 &5360283395729654836
 GameObject:
   m_ObjectHideFlags: 0
@@ -6266,7 +6266,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -6277,9 +6277,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HEALTH II:
+  m_Text: 'SHIP HEALTH II:
 
-    Increases the maximum health of the mothership.'
+    Increases the ship health.'
 --- !u!1 &5470832505673022353
 GameObject:
   m_ObjectHideFlags: 0
@@ -6348,7 +6348,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -6359,9 +6359,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'THRUSTER I:
+  m_Text: 'SPEED I:
 
-    Increases ship''s thruster strenght.'
+    Increases the player speed.'
 --- !u!1 &5517334317740567371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6397,7 +6397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.00006, y: -30}
+  m_AnchoredPosition: {x: 35.00006, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1279974284947109204
@@ -6619,7 +6619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.00006, y: -30}
+  m_AnchoredPosition: {x: 35.00006, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5047044807094550483
@@ -6830,7 +6830,7 @@ GameObject:
   - component: {fileID: 4687596203502789773}
   - component: {fileID: 1652729873623297219}
   m_Layer: 5
-  m_Name: Upgrade Slow II
+  m_Name: Upgrade Range II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6965,14 +6965,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skillEffect: 7
+  _skillEffect: 8
   _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 1785103266821876919}
   - {fileID: 4561735028404016684}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 2789421823631627518}
   IsUnlocked: 0
 --- !u!1 &6391287269496498241
 GameObject:
@@ -7128,7 +7128,7 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 6417565660635443609}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &6452532171951155411
@@ -7199,10 +7199,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -7210,9 +7210,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'CANNON II:
+  m_Text: 'SHIP GUN II:
 
-    Increase the mothership damage to aliens.'
+    Increases the gun damage to aliens.'
 --- !u!1 &6488902905108652291
 GameObject:
   m_ObjectHideFlags: 0
@@ -7552,7 +7552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -32}
+  m_AnchoredPosition: {x: -40, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1555721356073099231
@@ -7944,7 +7944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.00006, y: -30}
+  m_AnchoredPosition: {x: 35.00006, y: -25}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4837334442460634120
@@ -8139,7 +8139,7 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 784372214458786826}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &7186123589208988180
@@ -8297,7 +8297,7 @@ MonoBehaviour:
   - {fileID: 6066923394180860478}
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 3330608268578053825}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &7208873424245315436
@@ -8684,7 +8684,7 @@ MonoBehaviour:
   - {fileID: 1309629176239406103}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 587680268705859415}
   IsUnlocked: 0
 --- !u!1 &7485855470102285426
 GameObject:
@@ -8840,7 +8840,7 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 8007020072264840863}
   _gutsCostAmount: {fileID: 0}
   IsUnlocked: 0
 --- !u!1 &7578893191405957667
@@ -8998,7 +8998,7 @@ MonoBehaviour:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 4425821460037028550}
   IsUnlocked: 0
 --- !u!1 &7670011387772340846
 GameObject:
@@ -9156,8 +9156,8 @@ MonoBehaviour:
   _requiredMenuOptions:
   - {fileID: 3044651878891983770}
   _skilltree: {fileID: 0}
-  _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _metalCostAmount: {fileID: 9159153940069944594}
+  _gutsCostAmount: {fileID: 1443935681057303734}
   IsUnlocked: 0
 --- !u!1 &7700050030312471896
 GameObject:
@@ -9270,7 +9270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -32}
+  m_AnchoredPosition: {x: -40, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8349712424813049730
@@ -9350,7 +9350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.999939, y: -32}
+  m_AnchoredPosition: {x: 9.999939, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1973599129775475768
@@ -9463,10 +9463,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -9474,9 +9474,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'BOND I:
+  m_Text: 'ROPE I:
 
-    Upgrade lenght of bond and mother- ship attack range.
+    Increases the lenght of the rope.
 
 
 '
@@ -9860,7 +9860,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -9871,9 +9871,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'TRAVEL SPEED I:
+  m_Text: 'SHIP SPEED I:
 
-    Increases the travel speed of the mothership.'
+    Increases the ship speed.'
 --- !u!1 &8162318431641515258
 GameObject:
   m_ObjectHideFlags: 0
@@ -10262,7 +10262,7 @@ MonoBehaviour:
   - {fileID: 5579858359199604220}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 5567203447830924615}
   IsUnlocked: 0
 --- !u!1 &8367029715970187977
 GameObject:
@@ -10732,7 +10732,7 @@ MonoBehaviour:
   - {fileID: 6990119876308342282}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 2389899967847754879}
   IsUnlocked: 0
 --- !u!1 &8732722651034243567
 GameObject:
@@ -10882,7 +10882,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -10893,9 +10893,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'LASER II:
+  m_Text: 'PISTOL II:
 
-    Increases the attack speed of the ship''s laser.'
+    Increases the player damage to planets.'
 --- !u!1 &8906333530235882044
 GameObject:
   m_ObjectHideFlags: 0
@@ -10931,7 +10931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -32}
+  m_AnchoredPosition: {x: -40, y: -27}
   m_SizeDelta: {x: 30, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2510595222850260673
@@ -10990,7 +10990,7 @@ GameObject:
   - component: {fileID: 7044822664937979574}
   - component: {fileID: 699497697093869919}
   m_Layer: 5
-  m_Name: Upgrade Range I
+  m_Name: Upgrade Slow I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11125,13 +11125,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a36c69d698cd8468252e241d437090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skillEffect: 8
+  _skillEffect: 7
   _unlockCost: 0000000000000000
   _requiredMenuOptions:
   - {fileID: 6847008590387954547}
   _skilltree: {fileID: 0}
   _metalCostAmount: {fileID: 0}
-  _gutsCostAmount: {fileID: 0}
+  _gutsCostAmount: {fileID: 55337822068472623}
   IsUnlocked: 0
 --- !u!1 &9050256171604796875
 GameObject:
@@ -11201,7 +11201,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 13
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -11212,9 +11212,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SLOW II:
+  m_Text: 'RANGE II:
 
-    Increases the laser slow to aliens.'
+    Increases range'
 --- !u!1 &9175712978593650753
 GameObject:
   m_ObjectHideFlags: 0

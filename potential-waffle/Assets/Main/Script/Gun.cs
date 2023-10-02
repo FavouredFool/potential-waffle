@@ -6,14 +6,16 @@ using System.Linq;
 using UnityEngine.AI;
 
 public class Gun : MonoBehaviour
-{
-    [SerializeField] GameObject _laserBlueprint; 
+{   
+    [SerializeField] Laser _laserBlueprint; 
     [SerializeField] Transform _shootingPointTransform;
     [SerializeField] float _fireRatePerSecond = 1;
     [SerializeField] float _rotateSpeed = 2;
     [SerializeField] float _searchRadius = 4;
+    [SerializeField] float _searchRadiusIncrease = 1.5f;
 
     float _timeLastShot = float.NegativeInfinity;
+    int _damageMultiplier = 1;
 
     Vector2 _gunLookDirection = Vector2.up;
     Enemy _activeEnemy = null;
@@ -74,8 +76,24 @@ public class Gun : MonoBehaviour
         // If enemies are targeted
         if (Time.time - _timeLastShot > 1 / _fireRatePerSecond)
         {
-            Instantiate(_laserBlueprint, _shootingPointTransform.position, _shootingPointTransform.rotation);
+            Laser laser = Instantiate(_laserBlueprint, _shootingPointTransform.position, _shootingPointTransform.rotation);
+            laser.SetDamage(_damageMultiplier);
             _timeLastShot = Time.time;
         }
+    }
+
+    public void IncreaseSearchDistance()
+    {
+        _searchRadius += _searchRadiusIncrease;
+    }
+
+    public void UpgradeDamageMultiplier()
+    {
+        _damageMultiplier*=2;
+    }
+
+    public void UpgradeFireRate()
+    {
+        _fireRatePerSecond*=2;
     }
 }

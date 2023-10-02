@@ -8,10 +8,11 @@ public class Laser : MonoBehaviour
 {
     public enum LaserType {SMALL, BIG}
 
+    [SerializeField] int _damage = 1;
     [SerializeField] LaserType _laserType;
     [SerializeField] float _shootingForce = 3f;
     [SerializeField] float _timeTillKill = 0.35f;
-
+    
     Rigidbody2D _rigidBody;
 
     Tween _scaleTween;
@@ -31,27 +32,14 @@ public class Laser : MonoBehaviour
     {
         Hittable hittable = collision.gameObject.GetComponent<Hittable>();
 
-        ResourceType resourceType = hittable.GetResourceType();
-
         if (hittable != null)
         {
-            if (resourceType == ResourceType.METAL)
+            if (hittable.GetResourceType() == ResourceType.GUTS)
             {
-                hittable.ReduceHP(1);
+                Enemy enemy = hittable.GetComponent<Enemy>();
+                enemy.SlowEnemy();
             }
-            else
-            {
-                if (_laserType == LaserType.BIG)
-                {
-                    hittable.ReduceHP(1);
-                }
-                else
-                {
-                    hittable.ReduceHP(0);
-                }
-            }
-
-            
+            hittable.ReduceHP(_damage);
         }
 
         if (_scaleTween != null)
@@ -60,5 +48,15 @@ public class Laser : MonoBehaviour
         }
         
         Destroy(this.gameObject);
+    }
+
+    public void SetDamage(int multiplier)
+    {
+        _damage *= multiplier;
+    }
+
+    public void SetTimeTillKill(int multiplier)
+    {
+        _timeTillKill *= multiplier;
     }
 }

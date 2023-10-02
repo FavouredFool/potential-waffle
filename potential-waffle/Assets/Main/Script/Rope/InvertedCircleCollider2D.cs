@@ -21,13 +21,10 @@ public class InvertedCircleCollider2D : MonoBehaviour
         Generate();
     }
 
-    void Update()
+    public void IncreaseBorderRadius()
     {
-        if (Input.GetMouseButtonDown(2))
-        {
             Radius += _lineIncrease;
             OnValidate();
-        }
     }
 
     private void Generate()
