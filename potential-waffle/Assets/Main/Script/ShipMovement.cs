@@ -96,4 +96,9 @@ public class ShipMovement : MonoBehaviour
         _moveSpeed *= 2;
     }
 
+    public void Heal()
+    {
+        _currentHealth = Mathf.Min(_currentHealth+1, _maxHealth);
+    }
+
 }

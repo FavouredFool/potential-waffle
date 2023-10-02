@@ -17,6 +17,8 @@ public class Hittable : MonoBehaviour
     [SerializeField] Gradient _healthbarGradient;
     [SerializeField] SpriteRenderer _spriteRenderer;
     [SerializeField] Color _damageColor;
+    [SerializeField] Heal _HealBlueprint;
+    [SerializeField] float _healOrbSpawnChance;
 
     int _currentHealth;
 
@@ -29,6 +31,7 @@ public class Hittable : MonoBehaviour
     {
         _currentHealth = _maxHealth;
         _rigidBody = GetComponent<Rigidbody2D>();
+        _spriteRenderer.color = Color.white;
     }
 
     void Update()
@@ -45,6 +48,11 @@ public class Hittable : MonoBehaviour
             for (int i = 0; i < Random.Range(_minResource, _maxResource+1); i++) 
             {
                 Instantiate(_ResourceBlueprint, transform.position, transform.rotation);
+            }
+
+            if (Random.Range(0f, 1f) <= _healOrbSpawnChance)
+            {
+                Instantiate(_HealBlueprint, transform.position, transform.rotation);
             }
 
             _healthBarFadeOutTween.Kill();
