@@ -514,6 +514,7 @@ MonoBehaviour:
   _fireRatePerSecond: 1
   _rotateSpeed: 1
   _searchRadius: 1.5
+  _searchRadiusIncrease: 1.5
 --- !u!1 &4469412376078259836
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,6 +7,10 @@ using UnityEngine.UI;
 
 public class Skilltree : MonoBehaviour
 {
+    [SerializeField] CameraMovement _cameraMovement;
+    [SerializeField] Gun _gun;
+    [SerializeField] InvertedCircleCollider2D _circleCollider;
+
     public enum SkillEffect {ROPE, SHIPGUN, SHIPGUNSPEED, SHIPHEALTH, SHIPSPEED, PISTOL, SPEED, SLOW, RANGE}
     public ResourceManager ResourceManager;
     public Sprite[] TextBGs;
@@ -21,7 +25,84 @@ public class Skilltree : MonoBehaviour
     {
         SetImages();
 
-        Debug.Log("Effect: " + skillEffect);
+        switch(skillEffect)
+        {
+            case SkillEffect.ROPE:
+                RopeEffect();
+                break;
+            case SkillEffect.SHIPGUN:
+                ShipGunEffect();
+                break;
+            case SkillEffect.SHIPGUNSPEED:
+                ShipGunSpeedEffect();
+                break;
+            case SkillEffect.SHIPHEALTH:
+                ShipHealthEffect();
+                break;
+            case SkillEffect.SHIPSPEED:
+                ShipSpeedEffect();
+                break;
+            case SkillEffect.PISTOL:
+                PistolEffect();
+                break;
+            case SkillEffect.SPEED:
+                SpeedEffect();
+                break;
+            case SkillEffect.SLOW:
+                SlowEffect();
+                break;
+            case SkillEffect.RANGE:
+                RangeEffect();
+                break;
+        }
+    }
+
+    public void RopeEffect()
+    {
+        // Decrease Zoom, increase Gun Range + Rope Length
+        _cameraMovement.DecreaseZoom();
+        _gun.IncreaseSearchDistance();
+        _circleCollider.IncreaseBorderRadius();
+    }
+
+    public void ShipGunEffect()
+    {
+
+    }
+
+    public void ShipGunSpeedEffect()
+    {
+
+    }
+
+    public void ShipHealthEffect()
+    {
+        
+    }
+
+    public void ShipSpeedEffect()
+    {
+
+    }
+
+    public void PistolEffect()
+    {
+
+    }
+
+    public void SpeedEffect()
+    {
+
+    }
+
+    public void SlowEffect()
+    {
+
+    }
+
+    public void RangeEffect()
+    {
+
     }
 
     public void SetImages()

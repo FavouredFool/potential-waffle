@@ -13,8 +13,6 @@ public class CameraMovement : MonoBehaviour
 
     float _currentZoom;
 
-    Tween _zoomOutTween;
-
     void Start()
     {
         _camera.orthographicSize = _initialZoom;
@@ -33,15 +31,10 @@ public class CameraMovement : MonoBehaviour
         transform.rotation = Quaternion.LookRotation(Vector3.forward, (_ship.position - _planet.position).normalized);
 
         _camera.orthographicSize = _currentZoom;
-
-        if (Input.GetMouseButtonDown(2))
-        {
-            DecreaseZoom();
-        }
     }
 
     public void DecreaseZoom() 
     {
-        _zoomOutTween = DOTween.To(x => _currentZoom = x, _currentZoom, _currentZoom + _zoomDecrease, 0.75f).SetEase(Ease.InOutQuad);
+        DOTween.To(x => _currentZoom = x, _currentZoom, _currentZoom + _zoomDecrease, 0.75f).SetEase(Ease.InOutQuad);
     }
 }

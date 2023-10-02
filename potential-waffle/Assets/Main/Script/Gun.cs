@@ -12,6 +12,7 @@ public class Gun : MonoBehaviour
     [SerializeField] float _fireRatePerSecond = 1;
     [SerializeField] float _rotateSpeed = 2;
     [SerializeField] float _searchRadius = 4;
+    [SerializeField] float _searchRadiusIncrease = 1.5f;
 
     float _timeLastShot = float.NegativeInfinity;
 
@@ -77,5 +78,10 @@ public class Gun : MonoBehaviour
             Instantiate(_laserBlueprint, _shootingPointTransform.position, _shootingPointTransform.rotation);
             _timeLastShot = Time.time;
         }
+    }
+
+    public void IncreaseSearchDistance()
+    {
+        _searchRadius += _searchRadiusIncrease;
     }
 }
